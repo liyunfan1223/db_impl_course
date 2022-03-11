@@ -1,0 +1,149 @@
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: init.cpp init 201]>>Output configuration 
+Begin dump configuration
+[]
+
+[DefaultStorageStage]
+BaseDir=./miniob
+SystemDb=sys
+ThreadId=IOThreads
+
+[DefaultThreads]
+count=3
+
+[ExecuteStage]
+NextStages=DefaultStorageStage,MemStorageStage
+ThreadId=SQLThreads
+
+[IOThreads]
+count=3
+
+[LOG]
+LOG_CONSOLE_LEVEL=1
+LOG_FILE_LEVEL=3
+LOG_FILE_NAME=observer.log
+
+[MemStorageStage]
+ThreadId=IOThreads
+
+[MetricsStage]
+NextStages=TimerStage
+
+[NET]
+CLIENT_ADDRESS=INADDR_ANY
+MAX_CONNECTION_NUM=8192
+PORT=6789
+
+[OptimizeStage]
+NextStages=ExecuteStage
+ThreadId=SQLThreads
+
+[ParseStage]
+NextStages=OptimizeStage
+ThreadId=SQLThreads
+
+[PlanCacheStage]
+NextStages=ExecuteStage,ParseStage
+ThreadId=SQLThreads
+
+[QueryCacheStage]
+NextStages=PlanCacheStage
+ThreadId=SQLThreads
+
+[ResolveStage]
+NextStages=QueryCacheStage
+ThreadId=SQLThreads
+
+[SEDA_BASE]
+EventHistory=false
+MaxEventHistoryNum=100
+STAGES=SessionStage,ExecuteStage,OptimizeStage,ParseStage,ResolveStage,PlanCacheStage,QueryCacheStage,DefaultStorageStage,MemStorageStage,TimerStage,MetricsStage
+ThreadPools=SQLThre
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: init.cpp init_seda 63]>>(Re)Starting State: Pid: 29439 Time: Wed Mar  2 20:45:24 2022
+
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: init.cpp init_seda 64]>>The process Name is observer
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: seda_config.cpp init_event_history 209]>>Successfully init_event_history, EventHistory:0, MaxEventHops:100
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8c0700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f472e8c0700, threadname = SQLThreads
+
+[2022-3-2 20:45:24 pid:29439 tid:7f472e0b0700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f472e0b0700, threadname = SQLThreads
+
+[2022-3-2 20:45:24 pid:29439 tid:7f472d8a0700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f472d8a0700, threadname = SQLThreads
+
+[2022-3-2 20:45:24 pid:29439 tid:7f472d090700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f472d090700, threadname = IOThreads
+
+[2022-3-2 20:45:24 pid:29439 tid:7f472c880700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f472c880700, threadname = IOThreads
+
+[2022-3-2 20:45:24 pid:29439 tid:7f471f7e0700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f471f7e0700, threadname = DefaultThreads
+
+[2022-3-2 20:45:24 pid:29439 tid:7f471fff0700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f471fff0700, threadname = IOThreads
+
+[2022-3-2 20:45:24 pid:29439 tid:7f471efd0700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f471efd0700, threadname = DefaultThreads
+
+[2022-3-2 20:45:24 pid:29439 tid:7f471e7c0700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f471e7c0700, threadname = DefaultThreads
+
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: seda_config.cpp init_stages 354]>>Stage SessionStage use threadpool DefaultThreads.
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: seda_config.cpp init_stages 354]>>Stage ExecuteStage use threadpool DefaultThreads.
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: seda_config.cpp init_stages 354]>>Stage OptimizeStage use threadpool DefaultThreads.
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: seda_config.cpp init_stages 354]>>Stage ParseStage use threadpool DefaultThreads.
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: seda_config.cpp init_stages 354]>>Stage ResolveStage use threadpool DefaultThreads.
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: seda_config.cpp init_stages 354]>>Stage PlanCacheStage use threadpool DefaultThreads.
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: seda_config.cpp init_stages 354]>>Stage QueryCacheStage use threadpool DefaultThreads.
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: default_storage_stage.cpp set_properties 88]>>Use sys as system db
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: default_handler.cpp init 54]>>Default handler init with ./miniob success
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: db.cpp open_all_tables 119]>>All table have been opened. num=0
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: default_storage_stage.cpp set_properties 112]>>Open system db success: sys
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: seda_config.cpp init_stages 354]>>Stage DefaultStorageStage use threadpool DefaultThreads.
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: seda_config.cpp init_stages 354]>>Stage MemStorageStage use threadpool DefaultThreads.
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: seda_config.cpp get_thread_pool 296]>>Not set thread_pool_id for TimerStage, use default threadpool DefaultThreads
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: seda_config.cpp init_stages 354]>>Stage TimerStage use threadpool DefaultThreads.
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: seda_config.cpp get_thread_pool 296]>>Not set thread_pool_id for MetricsStage, use default threadpool DefaultThreads
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: seda_config.cpp init_stages 354]>>Stage MetricsStage use threadpool DefaultThreads.
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: metrics_registry.cpp register_metric 37]>>Successfully register metric :DefaultStorageStage.query
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: metrics_registry.cpp register_metric 37]>>Successfully register metric :SessionStage.sql
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: init.cpp init 225]>>Successfully init utility
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: metrics_registry.cpp register_metric 37]>>Successfully register metric :SessionStage.readsocket
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: metrics_registry.cpp register_metric 37]>>Successfully register metric :SessionStage.writesocket
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: server.cpp start_tcp_server 333]>>Listen on port 6789
+[2022-3-2 20:45:24 pid:29439 tid:7f472e8e1100  INFO: server.cpp start_tcp_server 350]>>Observer start success
+[2022-3-2 20:46:24 pid:29439 tid:7f471e7c0700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-2 20:46:24 pid:29439 tid:7f471e7c0700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-2 20:46:24 pid:29439 tid:7f471e7c0700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-2 20:46:24 pid:29439 tid:7f471e7c0700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-3-2 20:47:24 pid:29439 tid:7f471f7e0700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-2 20:47:24 pid:29439 tid:7f471f7e0700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-2 20:47:24 pid:29439 tid:7f471f7e0700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-2 20:47:24 pid:29439 tid:7f471f7e0700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-3-2 20:48:24 pid:29439 tid:7f471efd0700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-2 20:48:24 pid:29439 tid:7f471efd0700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-2 20:48:24 pid:29439 tid:7f471efd0700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-2 20:48:24 pid:29439 tid:7f471efd0700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-3-2 20:49:24 pid:29439 tid:7f471e7c0700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-2 20:49:24 pid:29439 tid:7f471e7c0700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-2 20:49:24 pid:29439 tid:7f471e7c0700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-2 20:49:24 pid:29439 tid:7f471e7c0700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-3-2 20:50:24 pid:29439 tid:7f471f7e0700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-2 20:50:24 pid:29439 tid:7f471f7e0700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-2 20:50:24 pid:29439 tid:7f471f7e0700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-2 20:50:24 pid:29439 tid:7f471f7e0700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-3-2 20:51:24 pid:29439 tid:7f471efd0700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-2 20:51:24 pid:29439 tid:7f471efd0700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-2 20:51:24 pid:29439 tid:7f471efd0700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-2 20:51:24 pid:29439 tid:7f471efd0700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-3-2 20:52:24 pid:29439 tid:7f471e7c0700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-2 20:52:24 pid:29439 tid:7f471e7c0700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-2 20:52:24 pid:29439 tid:7f471e7c0700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-2 20:52:24 pid:29439 tid:7f471e7c0700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-3-2 20:53:24 pid:29439 tid:7f471f7e0700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-2 20:53:24 pid:29439 tid:7f471f7e0700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-2 20:53:24 pid:29439 tid:7f471f7e0700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-2 20:53:24 pid:29439 tid:7f471f7e0700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-3-2 20:54:24 pid:29439 tid:7f471efd0700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-2 20:54:24 pid:29439 tid:7f471efd0700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-2 20:54:24 pid:29439 tid:7f471efd0700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-2 20:54:24 pid:29439 tid:7f471efd0700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-3-2 20:55:18 pid:29439 tid:7f471d7a0700  INFO: main.cpp quit_thread_func 137]>>Receive signal: 2
+[2022-3-2 20:55:18 pid:29439 tid:7f471d7a0700  INFO: server.cpp shutdown 433]>>Server shutting down
+[2022-3-2 20:55:18 pid:29439 tid:7f471d7a0700  INFO: server.cpp shutdown 453]>>Server quit
+[2022-3-2 20:55:18 pid:29439 tid:7f471cf90700  INFO: main.cpp quit_thread_func 137]>>Receive signal: 2
+[2022-3-2 20:55:18 pid:29439 tid:7f472e8e1100  INFO: main.cpp main 169]>>Server stopped
+[2022-3-2 20:55:18 pid:29439 tid:7f472e8e1100  INFO: db.cpp sync 147]>>Successfully sync db. db=sys
+[2022-3-2 20:55:18 pid:29439 tid:7f472e8e1100  INFO: db.cpp ~Db 33]>>Db has been closed: sys

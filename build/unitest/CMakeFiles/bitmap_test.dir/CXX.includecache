@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../deps/common/lang/bitmap.h
+
+/home/jack/miniob/unitest/bitmap_test.cpp
+string.h
+-
+gtest/gtest.h
+/home/jack/miniob/unitest/gtest/gtest.h
+common/lang/bitmap.h
+/home/jack/miniob/unitest/common/lang/bitmap.h
+sstream
+-
+

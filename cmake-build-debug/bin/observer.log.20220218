@@ -1,0 +1,179 @@
+[2022-2-18 1:31:33 pid:11043 tid:7f48feb3d740  INFO: init.cpp init 201]>>Output configuration 
+Begin dump configuration
+[]
+
+Finish dump configuration 
+
+[2022-2-18 1:31:33 pid:11043 tid:7f48feb3d740  INFO: init.cpp init_seda 63]>>(Re)Starting State: Pid: 11043 Time: Fri Feb 18 01:31:33 2022
+
+[2022-2-18 1:31:33 pid:11043 tid:7f48feb3d740  INFO: init.cpp init_seda 64]>>The process Name is observer
+[2022-2-18 1:31:33 pid:11043 tid:7f48feb3d740  INFO: seda_config.cpp init_event_history 209]>>Successfully init_event_history, EventHistory:0, MaxEventHops:100
+[2022-2-18 1:31:33 pid:11043 tid:7f48feb3d740  ERROR: seda_config.cpp init_thread_pool 225]>>Configuration hasn't set ThreadPools
+[2022-2-18 1:31:33 pid:11043 tid:7f48feb3d740  ERROR: seda_config.cpp instantiate 420]>>Failed to init thread pool
+
+[2022-2-18 1:31:33 pid:11043 tid:7f48feb3d740  ERROR: init.cpp init_seda 69]>>SedaConfig: unable to initialize seda stages
+[2022-2-18 1:31:33 pid:11043 tid:7f48feb3d740  ERROR: init.cpp init 209]>>Failed to init seda configuration!
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: init.cpp init 201]>>Output configuration 
+Begin dump configuration
+[]
+
+[DefaultStorageStage]
+BaseDir=./miniob
+SystemDb=sys
+ThreadId=IOThreads
+
+[DefaultThreads]
+count=3
+
+[ExecuteStage]
+NextStages=DefaultStorageStage,MemStorageStage
+ThreadId=SQLThreads
+
+[IOThreads]
+count=3
+
+[LOG]
+LOG_CONSOLE_LEVEL=1
+LOG_FILE_LEVEL=3
+LOG_FILE_NAME=observer.log
+
+[MemStorageStage]
+ThreadId=IOThreads
+
+[MetricsStage]
+NextStages=TimerStage
+
+[NET]
+CLIENT_ADDRESS=INADDR_ANY
+MAX_CONNECTION_NUM=8192
+PORT=6789
+
+[OptimizeStage]
+NextStages=ExecuteStage
+ThreadId=SQLThreads
+
+[ParseStage]
+NextStages=OptimizeStage
+ThreadId=SQLThreads
+
+[PlanCacheStage]
+NextStages=ExecuteStage,ParseStage
+ThreadId=SQLThreads
+
+[QueryCacheStage]
+NextStages=PlanCacheStage
+ThreadId=SQLThreads
+
+[ResolveStage]
+NextStages=QueryCacheStage
+ThreadId=SQLThreads
+
+[SEDA_BASE]
+EventHistory=false
+MaxEventHistoryNum=100
+STAGES=SessionStage,ExecuteStage,OptimizeStage,ParseStage,ResolveStage,PlanCacheStage,QueryCacheStage,DefaultStorageStage,MemStorageStage,TimerStage,MetricsStage
+ThreadPools=SQLThre
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: init.cpp init_seda 63]>>(Re)Starting State: Pid: 12089 Time: Fri Feb 18 01:32:09 2022
+
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: init.cpp init_seda 64]>>The process Name is observer
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: seda_config.cpp init_event_history 209]>>Successfully init_event_history, EventHistory:0, MaxEventHops:100
+[2022-2-18 1:32:9 pid:12089 tid:7f672f021700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f672f021700, threadname = SQLThreads
+
+[2022-2-18 1:32:9 pid:12089 tid:7f672e01f700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f672e01f700, threadname = SQLThreads
+
+[2022-2-18 1:32:9 pid:12089 tid:7f672e820700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f672e820700, threadname = SQLThreads
+
+[2022-2-18 1:32:9 pid:12089 tid:7f672d01d700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f672d01d700, threadname = IOThreads
+
+[2022-2-18 1:32:9 pid:12089 tid:7f672c81c700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f672c81c700, threadname = IOThreads
+
+[2022-2-18 1:32:9 pid:12089 tid:7f671ffff700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f671ffff700, threadname = DefaultThreads
+
+[2022-2-18 1:32:9 pid:12089 tid:7f671effd700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f671effd700, threadname = DefaultThreads
+
+[2022-2-18 1:32:9 pid:12089 tid:7f672d81e700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f672d81e700, threadname = IOThreads
+
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: seda_config.cpp init_stages 354]>>Stage SessionStage use threadpool DefaultThreads.
+[2022-2-18 1:32:9 pid:12089 tid:7f671f7fe700  INFO: thread_pool.cpp run_thread 258]>>threadid = 7f671f7fe700, threadname = DefaultThreads
+
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: seda_config.cpp init_stages 354]>>Stage ExecuteStage use threadpool DefaultThreads.
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: seda_config.cpp init_stages 354]>>Stage OptimizeStage use threadpool DefaultThreads.
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: seda_config.cpp init_stages 354]>>Stage ParseStage use threadpool DefaultThreads.
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: seda_config.cpp init_stages 354]>>Stage ResolveStage use threadpool DefaultThreads.
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: seda_config.cpp init_stages 354]>>Stage PlanCacheStage use threadpool DefaultThreads.
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: seda_config.cpp init_stages 354]>>Stage QueryCacheStage use threadpool DefaultThreads.
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: default_storage_stage.cpp set_properties 88]>>Use sys as system db
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: default_handler.cpp init 54]>>Default handler init with ./miniob success
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: db.cpp open_all_tables 119]>>All table have been opened. num=0
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: default_storage_stage.cpp set_properties 112]>>Open system db success: sys
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: seda_config.cpp init_stages 354]>>Stage DefaultStorageStage use threadpool DefaultThreads.
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: seda_config.cpp init_stages 354]>>Stage MemStorageStage use threadpool DefaultThreads.
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: seda_config.cpp get_thread_pool 296]>>Not set thread_pool_id for TimerStage, use default threadpool DefaultThreads
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: seda_config.cpp init_stages 354]>>Stage TimerStage use threadpool DefaultThreads.
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: seda_config.cpp get_thread_pool 296]>>Not set thread_pool_id for MetricsStage, use default threadpool DefaultThreads
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: seda_config.cpp init_stages 354]>>Stage MetricsStage use threadpool DefaultThreads.
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: metrics_registry.cpp register_metric 37]>>Successfully register metric :DefaultStorageStage.query
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: metrics_registry.cpp register_metric 37]>>Successfully register metric :SessionStage.sql
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: init.cpp init 225]>>Successfully init utility
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: metrics_registry.cpp register_metric 37]>>Successfully register metric :SessionStage.readsocket
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: metrics_registry.cpp register_metric 37]>>Successfully register metric :SessionStage.writesocket
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: server.cpp start_tcp_server 333]>>Listen on port 6789
+[2022-2-18 1:32:9 pid:12089 tid:7f672f022740  INFO: server.cpp start_tcp_server 350]>>Observer start success
+[2022-2-18 1:32:18 pid:12089 tid:7f672f022740  INFO: server.cpp accept 278]>>Accepted connection from 127.0.0.1:61147
+
+[2022-2-18 1:33:9 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-2-18 1:33:9 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-2-18 1:33:9 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-2-18 1:33:9 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-2-18 1:34:9 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-2-18 1:34:9 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-2-18 1:34:9 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-2-18 1:34:9 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-2-18 1:35:9 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-2-18 1:35:9 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-2-18 1:35:9 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-2-18 1:35:9 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-2-18 1:36:9 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-2-18 1:36:9 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-2-18 1:36:9 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-2-18 1:36:9 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-2-18 11:2:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-2-18 11:2:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-2-18 11:2:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-2-18 11:2:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-2-18 11:3:53 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-2-18 11:3:53 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-2-18 11:3:53 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-2-18 11:3:53 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-2-18 11:4:53 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-2-18 11:4:53 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-2-18 11:4:53 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-2-18 11:4:53 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-2-18 11:5:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-2-18 11:5:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-2-18 11:5:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-2-18 11:5:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-2-18 11:6:53 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-2-18 11:6:53 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-2-18 11:6:53 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-2-18 11:6:53 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-2-18 11:7:53 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-2-18 11:7:53 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-2-18 11:7:53 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-2-18 11:7:53 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-2-18 11:8:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-2-18 11:8:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-2-18 11:8:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-2-18 11:8:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-2-18 11:9:53 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-2-18 11:9:53 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-2-18 11:9:53 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-2-18 11:9:53 pid:12089 tid:7f671effd700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-2-18 11:10:53 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-2-18 11:10:53 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-2-18 11:10:53 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-2-18 11:10:53 pid:12089 tid:7f671f7fe700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-2-18 11:11:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-2-18 11:11:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-2-18 11:11:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-2-18 11:11:53 pid:12089 tid:7f671ffff700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0

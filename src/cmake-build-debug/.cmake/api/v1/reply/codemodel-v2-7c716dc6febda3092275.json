@@ -1,0 +1,120 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "obclient",
+					"hasInstallRule" : true,
+					"parentIndex" : 0,
+					"projectIndex" : 1,
+					"source" : "obclient",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "observer",
+					"hasInstallRule" : true,
+					"parentIndex" : 0,
+					"projectIndex" : 2,
+					"source" : "observer",
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "miniob"
+				},
+				{
+					"directoryIndexes" : 
+					[
+						1
+					],
+					"name" : "obclient",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"directoryIndexes" : 
+					[
+						2
+					],
+					"name" : "observer",
+					"parentIndex" : 0,
+					"targetIndexes" : 
+					[
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "obclient::@eb8e0bcdda02fcac571c",
+					"jsonFile" : "target-obclient-Debug-838d082ccca944d0143f.json",
+					"name" : "obclient",
+					"projectIndex" : 1
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "observer::@1c94c88f6a36090536bd",
+					"jsonFile" : "target-observer-Debug-cb2ff93f0ab067cca36a.json",
+					"name" : "observer",
+					"projectIndex" : 2
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "observer_static::@1c94c88f6a36090536bd",
+					"jsonFile" : "target-observer_static-Debug-4b869ec7d971a82c645d.json",
+					"name" : "observer_static",
+					"projectIndex" : 2
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/jack/miniob/src/cmake-build-debug",
+		"source" : "/home/jack/miniob/src"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

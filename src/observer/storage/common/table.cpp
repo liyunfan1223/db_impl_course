@@ -127,12 +127,37 @@ RC Table::destroy(const char* dir) {
   if(rc != RC::SUCCESS) return rc;
 
   //TODO 删除描述表元数据的文件
+  std::string meta_file = table_meta_file(dir, name()); // 获取元数据文件路径(.table)
+  if (unlink(meta_file.c_str()) != 0) { // unlink()返回值0表示成功 -1表示失败
+    return RC::GENERIC_ERROR;
+  }
 
   //TODO 删除表数据文件
+  std::string data_file = table_data_file(dir, name()); // 获取表数据文件路径(.data)
+  if (unlink(data_file.c_str()) != 0) { // unlink()返回值0表示成功 -1表示失败
+    return RC::GENERIC_ERROR;
+  }
 
   //TODO 清理所有的索引相关文件数据与索引元数据
-
-  return RC::GENERIC_ERROR;
+  const int index_num = table_meta_.index_num();
+  for (int i = 0; i < index_num; i++) { // 遍历每个索引
+    const IndexMeta *index_meta = table_meta_.index(i);
+    const FieldMeta *field_meta = table_meta_.field(index_meta->field());
+    if (field_meta == nullptr) {
+      LOG_ERROR("Found invalid index meta info which has a non-exists field. table=%s, index=%s, field=%s",
+                name(),
+                index_meta->name(),
+                index_meta->field());
+      // skip cleanup
+      // do all cleanup action in destructive Table function
+      return RC::GENERIC_ERROR;
+    }
+    std::string index_file = table_index_file(dir, name(), index_meta->name()); // 获取索引文件名(.index)
+    if (unlink(index_file.c_str()) != 0) {
+      return RC::GENERIC_ERROR;
+    }
+  }
+  return RC::SUCCESS;
 }
 
 
