@@ -442,3 +442,15 @@ ThreadPools=SQLThre
 [2022-3-11 13:49:35 pid:7282 tid:7fffe77e0700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
 [2022-3-11 13:49:35 pid:7282 tid:7fffe77e0700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
 [2022-3-11 13:49:35 pid:7282 tid:7fffe77e0700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-3-11 13:50:35 pid:7282 tid:7fffe6fd0700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-11 13:50:35 pid:7282 tid:7fffe6fd0700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-11 13:50:35 pid:7282 tid:7fffe6fd0700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-11 13:50:35 pid:7282 tid:7fffe6fd0700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-3-11 13:51:35 pid:7282 tid:7fffe7ff0700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-11 13:51:35 pid:7282 tid:7fffe7ff0700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-11 13:51:35 pid:7282 tid:7fffe7ff0700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-11 13:51:35 pid:7282 tid:7fffe7ff0700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
+[2022-3-11 13:52:35 pid:7282 tid:7fffe77e0700  INFO: log_reporter.cpp report 36]>>DefaultStorageStage.query:mean:0,tps:0
+[2022-3-11 13:52:35 pid:7282 tid:7fffe77e0700  INFO: log_reporter.cpp report 36]>>SessionStage.readsocket:mean:0,tps:0
+[2022-3-11 13:52:35 pid:7282 tid:7fffe77e0700  INFO: log_reporter.cpp report 36]>>SessionStage.sql:mean:0,tps:0
+[2022-3-11 13:52:35 pid:7282 tid:7fffe77e0700  INFO: log_reporter.cpp report 36]>>SessionStage.writesocket:mean:0,tps:0
