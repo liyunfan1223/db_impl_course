@@ -421,9 +421,22 @@ src/observer/CMakeFiles/observer.dir/storage/common/index.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/observer.dir/storage/common/index.cpp.s"
 	cd /home/jack/miniob/cmake-build-debug/src/observer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/miniob/src/observer/storage/common/index.cpp -o CMakeFiles/observer.dir/storage/common/index.cpp.s
 
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o: src/observer/CMakeFiles/observer.dir/flags.make
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o: ../src/observer/storage/common/index_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o"
+	cd /home/jack/miniob/cmake-build-debug/src/observer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/observer.dir/storage/common/index_manager.cpp.o -c /home/jack/miniob/src/observer/storage/common/index_manager.cpp
+
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/observer.dir/storage/common/index_manager.cpp.i"
+	cd /home/jack/miniob/cmake-build-debug/src/observer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jack/miniob/src/observer/storage/common/index_manager.cpp > CMakeFiles/observer.dir/storage/common/index_manager.cpp.i
+
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/observer.dir/storage/common/index_manager.cpp.s"
+	cd /home/jack/miniob/cmake-build-debug/src/observer && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jack/miniob/src/observer/storage/common/index_manager.cpp -o CMakeFiles/observer.dir/storage/common/index_manager.cpp.s
+
 src/observer/CMakeFiles/observer.dir/storage/common/index_meta.cpp.o: src/observer/CMakeFiles/observer.dir/flags.make
 src/observer/CMakeFiles/observer.dir/storage/common/index_meta.cpp.o: ../src/observer/storage/common/index_meta.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/common/index_meta.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/common/index_meta.cpp.o"
 	cd /home/jack/miniob/cmake-build-debug/src/observer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/observer.dir/storage/common/index_meta.cpp.o -c /home/jack/miniob/src/observer/storage/common/index_meta.cpp
 
 src/observer/CMakeFiles/observer.dir/storage/common/index_meta.cpp.i: cmake_force
@@ -436,7 +449,7 @@ src/observer/CMakeFiles/observer.dir/storage/common/index_meta.cpp.s: cmake_forc
 
 src/observer/CMakeFiles/observer.dir/storage/common/meta_util.cpp.o: src/observer/CMakeFiles/observer.dir/flags.make
 src/observer/CMakeFiles/observer.dir/storage/common/meta_util.cpp.o: ../src/observer/storage/common/meta_util.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/common/meta_util.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/common/meta_util.cpp.o"
 	cd /home/jack/miniob/cmake-build-debug/src/observer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/observer.dir/storage/common/meta_util.cpp.o -c /home/jack/miniob/src/observer/storage/common/meta_util.cpp
 
 src/observer/CMakeFiles/observer.dir/storage/common/meta_util.cpp.i: cmake_force
@@ -449,7 +462,7 @@ src/observer/CMakeFiles/observer.dir/storage/common/meta_util.cpp.s: cmake_force
 
 src/observer/CMakeFiles/observer.dir/storage/common/record_manager.cpp.o: src/observer/CMakeFiles/observer.dir/flags.make
 src/observer/CMakeFiles/observer.dir/storage/common/record_manager.cpp.o: ../src/observer/storage/common/record_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/common/record_manager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/common/record_manager.cpp.o"
 	cd /home/jack/miniob/cmake-build-debug/src/observer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/observer.dir/storage/common/record_manager.cpp.o -c /home/jack/miniob/src/observer/storage/common/record_manager.cpp
 
 src/observer/CMakeFiles/observer.dir/storage/common/record_manager.cpp.i: cmake_force
@@ -462,7 +475,7 @@ src/observer/CMakeFiles/observer.dir/storage/common/record_manager.cpp.s: cmake_
 
 src/observer/CMakeFiles/observer.dir/storage/common/table.cpp.o: src/observer/CMakeFiles/observer.dir/flags.make
 src/observer/CMakeFiles/observer.dir/storage/common/table.cpp.o: ../src/observer/storage/common/table.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/common/table.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/common/table.cpp.o"
 	cd /home/jack/miniob/cmake-build-debug/src/observer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/observer.dir/storage/common/table.cpp.o -c /home/jack/miniob/src/observer/storage/common/table.cpp
 
 src/observer/CMakeFiles/observer.dir/storage/common/table.cpp.i: cmake_force
@@ -475,7 +488,7 @@ src/observer/CMakeFiles/observer.dir/storage/common/table.cpp.s: cmake_force
 
 src/observer/CMakeFiles/observer.dir/storage/common/table_meta.cpp.o: src/observer/CMakeFiles/observer.dir/flags.make
 src/observer/CMakeFiles/observer.dir/storage/common/table_meta.cpp.o: ../src/observer/storage/common/table_meta.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/common/table_meta.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/common/table_meta.cpp.o"
 	cd /home/jack/miniob/cmake-build-debug/src/observer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/observer.dir/storage/common/table_meta.cpp.o -c /home/jack/miniob/src/observer/storage/common/table_meta.cpp
 
 src/observer/CMakeFiles/observer.dir/storage/common/table_meta.cpp.i: cmake_force
@@ -488,7 +501,7 @@ src/observer/CMakeFiles/observer.dir/storage/common/table_meta.cpp.s: cmake_forc
 
 src/observer/CMakeFiles/observer.dir/storage/default/default_handler.cpp.o: src/observer/CMakeFiles/observer.dir/flags.make
 src/observer/CMakeFiles/observer.dir/storage/default/default_handler.cpp.o: ../src/observer/storage/default/default_handler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/default/default_handler.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/default/default_handler.cpp.o"
 	cd /home/jack/miniob/cmake-build-debug/src/observer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/observer.dir/storage/default/default_handler.cpp.o -c /home/jack/miniob/src/observer/storage/default/default_handler.cpp
 
 src/observer/CMakeFiles/observer.dir/storage/default/default_handler.cpp.i: cmake_force
@@ -501,7 +514,7 @@ src/observer/CMakeFiles/observer.dir/storage/default/default_handler.cpp.s: cmak
 
 src/observer/CMakeFiles/observer.dir/storage/default/default_storage_stage.cpp.o: src/observer/CMakeFiles/observer.dir/flags.make
 src/observer/CMakeFiles/observer.dir/storage/default/default_storage_stage.cpp.o: ../src/observer/storage/default/default_storage_stage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/default/default_storage_stage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/default/default_storage_stage.cpp.o"
 	cd /home/jack/miniob/cmake-build-debug/src/observer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/observer.dir/storage/default/default_storage_stage.cpp.o -c /home/jack/miniob/src/observer/storage/default/default_storage_stage.cpp
 
 src/observer/CMakeFiles/observer.dir/storage/default/default_storage_stage.cpp.i: cmake_force
@@ -514,7 +527,7 @@ src/observer/CMakeFiles/observer.dir/storage/default/default_storage_stage.cpp.s
 
 src/observer/CMakeFiles/observer.dir/storage/default/disk_buffer_pool.cpp.o: src/observer/CMakeFiles/observer.dir/flags.make
 src/observer/CMakeFiles/observer.dir/storage/default/disk_buffer_pool.cpp.o: ../src/observer/storage/default/disk_buffer_pool.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/default/disk_buffer_pool.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/default/disk_buffer_pool.cpp.o"
 	cd /home/jack/miniob/cmake-build-debug/src/observer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/observer.dir/storage/default/disk_buffer_pool.cpp.o -c /home/jack/miniob/src/observer/storage/default/disk_buffer_pool.cpp
 
 src/observer/CMakeFiles/observer.dir/storage/default/disk_buffer_pool.cpp.i: cmake_force
@@ -527,7 +540,7 @@ src/observer/CMakeFiles/observer.dir/storage/default/disk_buffer_pool.cpp.s: cma
 
 src/observer/CMakeFiles/observer.dir/storage/mem/mem_storage_stage.cpp.o: src/observer/CMakeFiles/observer.dir/flags.make
 src/observer/CMakeFiles/observer.dir/storage/mem/mem_storage_stage.cpp.o: ../src/observer/storage/mem/mem_storage_stage.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/mem/mem_storage_stage.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/mem/mem_storage_stage.cpp.o"
 	cd /home/jack/miniob/cmake-build-debug/src/observer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/observer.dir/storage/mem/mem_storage_stage.cpp.o -c /home/jack/miniob/src/observer/storage/mem/mem_storage_stage.cpp
 
 src/observer/CMakeFiles/observer.dir/storage/mem/mem_storage_stage.cpp.i: cmake_force
@@ -540,7 +553,7 @@ src/observer/CMakeFiles/observer.dir/storage/mem/mem_storage_stage.cpp.s: cmake_
 
 src/observer/CMakeFiles/observer.dir/storage/trx/trx.cpp.o: src/observer/CMakeFiles/observer.dir/flags.make
 src/observer/CMakeFiles/observer.dir/storage/trx/trx.cpp.o: ../src/observer/storage/trx/trx.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_38) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/trx/trx.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Building CXX object src/observer/CMakeFiles/observer.dir/storage/trx/trx.cpp.o"
 	cd /home/jack/miniob/cmake-build-debug/src/observer && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/observer.dir/storage/trx/trx.cpp.o -c /home/jack/miniob/src/observer/storage/trx/trx.cpp
 
 src/observer/CMakeFiles/observer.dir/storage/trx/trx.cpp.i: cmake_force
@@ -581,6 +594,7 @@ observer_OBJECTS = \
 "CMakeFiles/observer.dir/storage/common/db.cpp.o" \
 "CMakeFiles/observer.dir/storage/common/field_meta.cpp.o" \
 "CMakeFiles/observer.dir/storage/common/index.cpp.o" \
+"CMakeFiles/observer.dir/storage/common/index_manager.cpp.o" \
 "CMakeFiles/observer.dir/storage/common/index_meta.cpp.o" \
 "CMakeFiles/observer.dir/storage/common/meta_util.cpp.o" \
 "CMakeFiles/observer.dir/storage/common/record_manager.cpp.o" \
@@ -623,6 +637,7 @@ bin/observer: src/observer/CMakeFiles/observer.dir/storage/common/condition_filt
 bin/observer: src/observer/CMakeFiles/observer.dir/storage/common/db.cpp.o
 bin/observer: src/observer/CMakeFiles/observer.dir/storage/common/field_meta.cpp.o
 bin/observer: src/observer/CMakeFiles/observer.dir/storage/common/index.cpp.o
+bin/observer: src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o
 bin/observer: src/observer/CMakeFiles/observer.dir/storage/common/index_meta.cpp.o
 bin/observer: src/observer/CMakeFiles/observer.dir/storage/common/meta_util.cpp.o
 bin/observer: src/observer/CMakeFiles/observer.dir/storage/common/record_manager.cpp.o
@@ -636,7 +651,7 @@ bin/observer: src/observer/CMakeFiles/observer.dir/storage/trx/trx.cpp.o
 bin/observer: src/observer/CMakeFiles/observer.dir/build.make
 bin/observer: lib/libcommon.so.1.0.0
 bin/observer: src/observer/CMakeFiles/observer.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_39) "Linking CXX executable ../../bin/observer"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking CXX executable ../../bin/observer"
 	cd /home/jack/miniob/cmake-build-debug/src/observer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/observer.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

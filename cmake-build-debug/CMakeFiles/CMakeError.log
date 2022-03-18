@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
 Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_97eae/fast && /usr/bin/make -f CMakeFiles/cmTC_97eae.dir/build.make CMakeFiles/cmTC_97eae.dir/build
+Run Build Command(s):/usr/bin/make cmTC_d68b9/fast && /usr/bin/make -f CMakeFiles/cmTC_d68b9.dir/build.make CMakeFiles/cmTC_d68b9.dir/build
 make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_97eae.dir/src.c.o
-/usr/bin/cc   -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_97eae.dir/src.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_97eae
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97eae.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_97eae.dir/src.c.o  -o cmTC_97eae 
-/usr/bin/ld: CMakeFiles/cmTC_97eae.dir/src.c.o: in function `main':
+Building C object CMakeFiles/cmTC_d68b9.dir/src.c.o
+/usr/bin/cc   -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_d68b9.dir/src.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_d68b9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d68b9.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -DCMAKE_HAVE_LIBC_PTHREAD    CMakeFiles/cmTC_d68b9.dir/src.c.o  -o cmTC_d68b9 
+/usr/bin/ld: CMakeFiles/cmTC_d68b9.dir/src.c.o: in function `main':
 /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:11: undefined reference to `pthread_create'
 /usr/bin/ld: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:12: undefined reference to `pthread_detach'
 /usr/bin/ld: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:13: undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_97eae.dir/build.make:87: cmTC_97eae] Error 1
+make[1]: *** [CMakeFiles/cmTC_d68b9.dir/build.make:87: cmTC_d68b9] Error 1
 make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_97eae/fast] Error 2
+make: *** [Makefile:121: cmTC_d68b9/fast] Error 2
 
 
 Source file was:
@@ -41,18 +41,18 @@ int main(void)
 Determining if the function pthread_create exists in the pthreads failed with the following output:
 Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_26691/fast && /usr/bin/make -f CMakeFiles/cmTC_26691.dir/build.make CMakeFiles/cmTC_26691.dir/build
+Run Build Command(s):/usr/bin/make cmTC_8e554/fast && /usr/bin/make -f CMakeFiles/cmTC_8e554.dir/build.make CMakeFiles/cmTC_8e554.dir/build
 make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_26691.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_26691.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_26691
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26691.dir/link.txt --verbose=1
-/usr/bin/cc  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_26691.dir/CheckFunctionExists.c.o  -o cmTC_26691  -lpthreads 
+Building C object CMakeFiles/cmTC_8e554.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_8e554.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8e554
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8e554.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTC_8e554.dir/CheckFunctionExists.c.o  -o cmTC_8e554  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_26691.dir/build.make:87: cmTC_26691] Error 1
+make[1]: *** [CMakeFiles/cmTC_8e554.dir/build.make:87: cmTC_8e554] Error 1
 make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_26691/fast] Error 2
+make: *** [Makefile:121: cmTC_8e554/fast] Error 2
 
 
 

@@ -1023,6 +1023,36 @@ storage/common/index.cpp.s:
 	cd /home/jack/miniob/cmake-build-debug && $(MAKE) -f src/observer/CMakeFiles/observer.dir/build.make src/observer/CMakeFiles/observer.dir/storage/common/index.cpp.s
 .PHONY : storage/common/index.cpp.s
 
+storage/common/index_manager.o: storage/common/index_manager.cpp.o
+
+.PHONY : storage/common/index_manager.o
+
+# target to build an object file
+storage/common/index_manager.cpp.o:
+	cd /home/jack/miniob/cmake-build-debug && $(MAKE) -f src/observer/CMakeFiles/observer_static.dir/build.make src/observer/CMakeFiles/observer_static.dir/storage/common/index_manager.cpp.o
+	cd /home/jack/miniob/cmake-build-debug && $(MAKE) -f src/observer/CMakeFiles/observer.dir/build.make src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o
+.PHONY : storage/common/index_manager.cpp.o
+
+storage/common/index_manager.i: storage/common/index_manager.cpp.i
+
+.PHONY : storage/common/index_manager.i
+
+# target to preprocess a source file
+storage/common/index_manager.cpp.i:
+	cd /home/jack/miniob/cmake-build-debug && $(MAKE) -f src/observer/CMakeFiles/observer_static.dir/build.make src/observer/CMakeFiles/observer_static.dir/storage/common/index_manager.cpp.i
+	cd /home/jack/miniob/cmake-build-debug && $(MAKE) -f src/observer/CMakeFiles/observer.dir/build.make src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.i
+.PHONY : storage/common/index_manager.cpp.i
+
+storage/common/index_manager.s: storage/common/index_manager.cpp.s
+
+.PHONY : storage/common/index_manager.s
+
+# target to generate assembly for a file
+storage/common/index_manager.cpp.s:
+	cd /home/jack/miniob/cmake-build-debug && $(MAKE) -f src/observer/CMakeFiles/observer_static.dir/build.make src/observer/CMakeFiles/observer_static.dir/storage/common/index_manager.cpp.s
+	cd /home/jack/miniob/cmake-build-debug && $(MAKE) -f src/observer/CMakeFiles/observer.dir/build.make src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.s
+.PHONY : storage/common/index_manager.cpp.s
+
 storage/common/index_meta.o: storage/common/index_meta.cpp.o
 
 .PHONY : storage/common/index_meta.o
@@ -1421,6 +1451,9 @@ help:
 	@echo "... storage/common/index.o"
 	@echo "... storage/common/index.i"
 	@echo "... storage/common/index.s"
+	@echo "... storage/common/index_manager.o"
+	@echo "... storage/common/index_manager.i"
+	@echo "... storage/common/index_manager.s"
 	@echo "... storage/common/index_meta.o"
 	@echo "... storage/common/index_meta.i"
 	@echo "... storage/common/index_meta.s"

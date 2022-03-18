@@ -28,6 +28,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/observer_static.dir/storage/common/db.cpp.o"
   "CMakeFiles/observer_static.dir/storage/common/field_meta.cpp.o"
   "CMakeFiles/observer_static.dir/storage/common/index.cpp.o"
+  "CMakeFiles/observer_static.dir/storage/common/index_manager.cpp.o"
   "CMakeFiles/observer_static.dir/storage/common/index_meta.cpp.o"
   "CMakeFiles/observer_static.dir/storage/common/meta_util.cpp.o"
   "CMakeFiles/observer_static.dir/storage/common/record_manager.cpp.o"

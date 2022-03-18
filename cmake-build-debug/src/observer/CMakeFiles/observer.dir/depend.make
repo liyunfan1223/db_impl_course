@@ -436,6 +436,19 @@ src/observer/CMakeFiles/observer.dir/storage/common/index.cpp.o: ../src/observer
 src/observer/CMakeFiles/observer.dir/storage/common/index.cpp.o: ../src/observer/storage/default/disk_buffer_pool.h
 src/observer/CMakeFiles/observer.dir/storage/common/index.cpp.o: ../src/observer/storage/common/index.cpp
 
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o: ../deps/common/defs.h
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o: ../deps/common/lang/mutex.h
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o: ../deps/common/log/log.h
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o: ../deps/common/mm/mem_pool.h
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o: ../deps/common/os/os.h
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o: ../deps/common/version.h
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o: ../src/observer/handler/handler.h
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o: ../src/observer/rc.h
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o: ../src/observer/storage/common/index_manager.h
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o: ../src/observer/storage/common/record_manager.h
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o: ../src/observer/storage/default/disk_buffer_pool.h
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o: ../src/observer/storage/common/index_manager.cpp
+
 src/observer/CMakeFiles/observer.dir/storage/common/index_meta.cpp.o: ../deps/common/defs.h
 src/observer/CMakeFiles/observer.dir/storage/common/index_meta.cpp.o: ../deps/common/lang/serializable.h
 src/observer/CMakeFiles/observer.dir/storage/common/index_meta.cpp.o: ../deps/common/lang/string.h

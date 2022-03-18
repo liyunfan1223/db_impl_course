@@ -49,6 +49,7 @@ set(CMAKE_DEPENDS_CHECK_CXX
   "/home/jack/miniob/src/observer/storage/common/db.cpp" "/home/jack/miniob/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/db.cpp.o"
   "/home/jack/miniob/src/observer/storage/common/field_meta.cpp" "/home/jack/miniob/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/field_meta.cpp.o"
   "/home/jack/miniob/src/observer/storage/common/index.cpp" "/home/jack/miniob/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/index.cpp.o"
+  "/home/jack/miniob/src/observer/storage/common/index_manager.cpp" "/home/jack/miniob/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o"
   "/home/jack/miniob/src/observer/storage/common/index_meta.cpp" "/home/jack/miniob/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/index_meta.cpp.o"
   "/home/jack/miniob/src/observer/storage/common/meta_util.cpp" "/home/jack/miniob/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/meta_util.cpp.o"
   "/home/jack/miniob/src/observer/storage/common/record_manager.cpp" "/home/jack/miniob/cmake-build-debug/src/observer/CMakeFiles/observer.dir/storage/common/record_manager.cpp.o"

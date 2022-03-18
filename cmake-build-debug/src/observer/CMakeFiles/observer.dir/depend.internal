@@ -436,6 +436,19 @@ src/observer/CMakeFiles/observer.dir/storage/common/index.cpp.o
  ../src/observer/storage/common/record_manager.h
  ../src/observer/storage/default/disk_buffer_pool.h
  /home/jack/miniob/src/observer/storage/common/index.cpp
+src/observer/CMakeFiles/observer.dir/storage/common/index_manager.cpp.o
+ ../deps/common/defs.h
+ ../deps/common/lang/mutex.h
+ ../deps/common/log/log.h
+ ../deps/common/mm/mem_pool.h
+ ../deps/common/os/os.h
+ ../deps/common/version.h
+ ../src/observer/handler/handler.h
+ ../src/observer/rc.h
+ ../src/observer/storage/common/index_manager.h
+ ../src/observer/storage/common/record_manager.h
+ ../src/observer/storage/default/disk_buffer_pool.h
+ /home/jack/miniob/src/observer/storage/common/index_manager.cpp
 src/observer/CMakeFiles/observer.dir/storage/common/index_meta.cpp.o
  ../deps/common/defs.h
  ../deps/common/lang/serializable.h

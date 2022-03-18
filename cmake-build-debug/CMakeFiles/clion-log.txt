@@ -110,10 +110,10 @@ Begin to build miniob
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src
 Begin to build obclient
--- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src/obclient
--- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src/obclient
 Use /home/jack/miniob/src/obclient/client.cpp
 Binary directory:/home/jack/miniob/cmake-build-debug/src/obclient/../../bin
+-- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src/obclient
+-- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src/obclient
 Begin to build observer
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src/observer
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src/observer
@@ -146,6 +146,7 @@ Use /home/jack/miniob/src/observer/storage/common/condition_filter.cpp
 Use /home/jack/miniob/src/observer/storage/common/db.cpp
 Use /home/jack/miniob/src/observer/storage/common/field_meta.cpp
 Use /home/jack/miniob/src/observer/storage/common/index.cpp
+Use /home/jack/miniob/src/observer/storage/common/index_manager.cpp
 Use /home/jack/miniob/src/observer/storage/common/index_meta.cpp
 Use /home/jack/miniob/src/observer/storage/common/meta_util.cpp
 Use /home/jack/miniob/src/observer/storage/common/record_manager.cpp
@@ -171,9 +172,9 @@ Build mem_pool_test according to /home/jack/miniob/unitest/mem_pool_test.cpp
 Build path_test according to /home/jack/miniob/unitest/path_test.cpp
 Build pidfile_test according to /home/jack/miniob/unitest/pidfile_test.cpp
 Build rc_test according to /home/jack/miniob/unitest/rc_test.cpp
+Begin to build test
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/test
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/test
-Begin to build test
  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g 
 Build client_performance_test according to /home/jack/miniob/test/client_performance_test.cpp
 -- Configuring done

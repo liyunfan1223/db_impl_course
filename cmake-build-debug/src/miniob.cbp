@@ -392,6 +392,14 @@
 			<Option target="observer_static"/>
 			<Option target="observer"/>
 		</Unit>
+		<Unit filename="/home/jack/miniob/src/observer/storage/common/index_manager.cpp">
+			<Option target="observer_static"/>
+			<Option target="observer"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/src/observer/storage/common/index_manager.h">
+			<Option target="observer_static"/>
+			<Option target="observer"/>
+		</Unit>
 		<Unit filename="/home/jack/miniob/src/observer/storage/common/index_meta.cpp">
 			<Option target="observer_static"/>
 			<Option target="observer"/>
