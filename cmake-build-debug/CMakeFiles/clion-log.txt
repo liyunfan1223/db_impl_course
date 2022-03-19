@@ -9,9 +9,9 @@ Disable debug
 CMAKE_CXX_FLAGS is  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g 
 CMAKE_INSTALL_PREFIX has been set as /usr/local
 Install target dir is /usr/local
+Begin to build common
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/deps/common
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/deps/common
-Begin to build common
 Use /home/jack/miniob/deps/common/conf/ini.cpp
 Use /home/jack/miniob/deps/common/io/io.cpp
 Use /home/jack/miniob/deps/common/io/roll_select_dir.cpp
@@ -109,14 +109,14 @@ Install version.h to /usr/local/common/include/
 Begin to build miniob
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src
+Begin to build obclient
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src/obclient
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src/obclient
-Begin to build obclient
 Use /home/jack/miniob/src/obclient/client.cpp
 Binary directory:/home/jack/miniob/cmake-build-debug/src/obclient/../../bin
+Begin to build observer
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src/observer
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src/observer
-Begin to build observer
 MAIN SRC: /home/jack/miniob/src/observer/main.cpp
 Use /home/jack/miniob/src/observer/event/execution_plan_event.cpp
 Use /home/jack/miniob/src/observer/event/session_event.cpp
@@ -160,9 +160,9 @@ Use /home/jack/miniob/src/observer/storage/trx/trx.cpp
 Binary directory:/home/jack/miniob/cmake-build-debug/src/observer/../../bin
 Archive directory:/home/jack/miniob/cmake-build-debug/src/observer/../../lib
 Begin to build unitest
- -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g 
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/unitest
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/unitest
+ -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g 
 Build bitmap_test according to /home/jack/miniob/unitest/bitmap_test.cpp
 Build bp_manager_test according to /home/jack/miniob/unitest/bp_manager_test.cpp
 Build bplus_tree_test according to /home/jack/miniob/unitest/bplus_tree_test.cpp
