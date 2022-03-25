@@ -106,10 +106,10 @@ Install seda/timer_stage.h to /usr/local/common/include/seda
 Install time/datetime.h to /usr/local/common/include/time
 Install time/timeout_info.h to /usr/local/common/include/time
 Install version.h to /usr/local/common/include/
--- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src
--- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src
 Begin to build miniob
 Begin to build obclient
+-- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src
+-- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src/obclient
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src/obclient
 Use /home/jack/miniob/src/obclient/client.cpp

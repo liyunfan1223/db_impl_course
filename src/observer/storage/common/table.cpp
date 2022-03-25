@@ -141,19 +141,22 @@ RC Table::destroy(const char* dir) {
   //TODO 清理所有的索引相关文件数据与索引元数据
   const int index_num = table_meta_.index_num();
   for (int i = 0; i < index_num; i++) { // 遍历每个索引
+    //
+    ((BplusTreeIndex*)indexes_[i])->close();
     const IndexMeta *index_meta = table_meta_.index(i);
-    const FieldMeta *field_meta = table_meta_.field(index_meta->field());
-    if (field_meta == nullptr) {
-      LOG_ERROR("Found invalid index meta info which has a non-exists field. table=%s, index=%s, field=%s",
-                name(),
-                index_meta->name(),
-                index_meta->field());
-      // skip cleanup
-      // do all cleanup action in destructive Table function
-      return RC::GENERIC_ERROR;
-    }
+//    const FieldMeta *field_meta = table_meta_.field(index_meta->field());
+//    if (field_meta == nullptr) {
+//      LOG_ERROR("Found invalid index meta info which has a non-exists field. table=%s, index=%s, field=%s",
+//                name(),
+//                index_meta->name(),
+//                index_meta->field());
+//      // skip cleanup
+//      // do all cleanup action in destructive Table function
+//      return RC::GENERIC_ERROR;
+//    }
     std::string index_file = table_index_file(dir, name(), index_meta->name()); // 获取索引文件名(.index)
     if (unlink(index_file.c_str()) != 0) {
+      LOG_ERROR("Failed to remove index file=%s, errno=%d", index_file.c_str(), errno);
       return RC::GENERIC_ERROR;
     }
   }
