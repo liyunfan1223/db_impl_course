@@ -76,10 +76,15 @@ class BPManager {
  public:
   BPManager(int size = BP_BUFFER_SIZE) {
     //TODO for test
+    frame = new Frame[size];
+    allocated = new bool[size];
+    _cache = new cache::lru_cache<std::pair<int, PageNum>, Frame*>(size);
   }
 
   ~BPManager() {
     //TODO for test
+    delete []frame;
+    delete []allocated;
   }
 
   Frame *alloc() {
@@ -89,7 +94,7 @@ class BPManager {
 
   Frame *get(int file_desc, PageNum page_num) {
     // TODO for test
-
+      return _cache->get(std::make_pair(file_desc, page_num));
   }
 
   Frame *getFrame() {
@@ -104,6 +109,8 @@ class BPManager {
   int size;
   Frame *frame = nullptr;
   bool *allocated = nullptr;
+private:
+    cache::lru_cache<std::pair<int, PageNum>, Frame*> *_cache;
 };
 
 class DiskBufferPool {
