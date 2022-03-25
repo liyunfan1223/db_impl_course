@@ -72,7 +72,7 @@ void ResolveStage::cleanup() {
   LOG_TRACE("Enter");
 
   LOG_TRACE("Exit");
-}
+}e
 
 void ResolveStage::handle_event(StageEvent *event) {
   LOG_TRACE("Enter\n");
