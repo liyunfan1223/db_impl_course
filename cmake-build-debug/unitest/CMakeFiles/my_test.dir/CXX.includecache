@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../src/observer/storage/default/lrucache.hpp
+unordered_map
+-
+list
+-
+cstddef
+-
+stdexcept
+-
+
+/home/jack/miniob/unitest/my_test.cpp
+map
+-
+unordered_map
+-
+gtest/gtest.h
+/home/jack/miniob/unitest/gtest/gtest.h
+storage/default/lrucache.hpp
+/home/jack/miniob/unitest/storage/default/lrucache.hpp
+
