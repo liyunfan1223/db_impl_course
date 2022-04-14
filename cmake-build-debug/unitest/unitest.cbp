@@ -684,9 +684,6 @@
 		<Unit filename="/home/jack/miniob/deps/libevent/cmake/CheckFunctionKeywords.cmake">
 			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
 		</Unit>
-		<Unit filename="/home/jack/miniob/deps/libevent/cmake/CheckPrototypeDefinition.c.in">
-			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
-		</Unit>
 		<Unit filename="/home/jack/miniob/deps/libevent/cmake/CheckPrototypeDefinition.cmake">
 			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
 		</Unit>

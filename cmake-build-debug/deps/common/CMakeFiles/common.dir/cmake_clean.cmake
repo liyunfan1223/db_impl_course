@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "../../lib/libcommon.pdb"
+  "../../bin/libcommon.pdb"
   "../../lib/libcommon.so"
   "../../lib/libcommon.so.1"
   "../../lib/libcommon.so.1.0.0"

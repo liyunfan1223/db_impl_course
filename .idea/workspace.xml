@@ -32,6 +32,65 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11dc654f-aae7-470f-be29-aa748fd684be" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/common/CMakeFiles/common.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/common/CMakeFiles/common.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/common/CMakeFiles/common_static.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/common/CMakeFiles/common_static.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/deps/common/common.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/deps/common/common.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/jsoncpp/jsoncpp.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/jsoncpp/jsoncpp.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libcommon.so" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libcommon.so" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/lib/libcommon.so.1" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/lib/libcommon.so.1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_core_static.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_core_static.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_core_static.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_core_static.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_core_static.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_core_static.dir/cmake_clean_target.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_core_static.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_core_static.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_extra_static.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_extra_static.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_extra_static.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_extra_static.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_extra_static.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_extra_static.dir/cmake_clean_target.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_extra_static.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_extra_static.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_pthreads_static.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_pthreads_static.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_pthreads_static.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_pthreads_static.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_pthreads_static.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_pthreads_static.dir/cmake_clean_target.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_pthreads_static.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_pthreads_static.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_static.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_static.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_static.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_static.dir/cmake_clean.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_static.dir/cmake_clean_target.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_static.dir/cmake_clean_target.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_static.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/CMakeFiles/event_static.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/LibeventTargets-static.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/LibeventTargets-static.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/cmake_install.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/libevent/libevent.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/libevent/libevent.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/minidb.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/minidb.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/miniob.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/miniob.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/obclient/obclient.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/obclient/obclient.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/CMakeFiles/observer.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/src/observer/observer.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/src/observer/observer.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/client_performance_test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/client_performance_test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/client_performance_test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/CMakeFiles/client_performance_test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/test/test.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/test/test.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/bitmap_test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/bitmap_test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/bitmap_test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/bitmap_test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/bp_manager_test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/bp_manager_test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/bp_manager_test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/bp_manager_test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/bplus_tree_test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/bplus_tree_test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/bplus_tree_test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/bplus_tree_test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/log_test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/log_test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/log_test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/log_test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/md5_test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/md5_test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/md5_test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/md5_test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/mem_pool_test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/mem_pool_test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/mem_pool_test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/mem_pool_test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/path_test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/path_test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/path_test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/path_test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/pidfile_test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/pidfile_test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/pidfile_test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/pidfile_test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/rc_test.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/rc_test.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/rc_test.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/CMakeFiles/rc_test.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/unitest/unitest.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/unitest/unitest.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/googletest" beforeDir="false" afterPath="$PROJECT_DIR$/deps/googletest" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/googletest/googlemock/test/gmock_leak_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/deps/googletest/googlemock/test/gmock_leak_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/googletest/googlemock/test/gmock_output_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/deps/googletest/googlemock/test/gmock_output_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/googletest/googlemock/test/gmock_test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/deps/googletest/googlemock/test/gmock_test_utils.py" afterDir="false" />
@@ -55,12 +114,14 @@
       <change beforePath="$PROJECT_DIR$/deps/googletest/googletest/test/gtest_xml_outfiles_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/deps/googletest/googletest/test/gtest_xml_outfiles_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/googletest/googletest/test/gtest_xml_output_unittest.py" beforeDir="false" afterPath="$PROJECT_DIR$/deps/googletest/googletest/test/gtest_xml_output_unittest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/googletest/googletest/test/gtest_xml_test_utils.py" beforeDir="false" afterPath="$PROJECT_DIR$/deps/googletest/googletest/test/gtest_xml_test_utils.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/jsoncpp" beforeDir="false" afterPath="$PROJECT_DIR$/deps/jsoncpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/jsoncpp/.travis_scripts/cmake_builder.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deps/jsoncpp/.travis_scripts/cmake_builder.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/jsoncpp/.travis_scripts/meson_builder.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deps/jsoncpp/.travis_scripts/meson_builder.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/jsoncpp/.travis_scripts/run-clang-format.py" beforeDir="false" afterPath="$PROJECT_DIR$/deps/jsoncpp/.travis_scripts/run-clang-format.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/jsoncpp/.travis_scripts/run-clang-format.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deps/jsoncpp/.travis_scripts/run-clang-format.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/jsoncpp/amalgamate.py" beforeDir="false" afterPath="$PROJECT_DIR$/deps/jsoncpp/amalgamate.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/jsoncpp/reformat.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deps/jsoncpp/reformat.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deps/libevent" beforeDir="false" afterPath="$PROJECT_DIR$/deps/libevent" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/libevent/autogen.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deps/libevent/autogen.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/libevent/checkpatch.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deps/libevent/checkpatch.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/libevent/event_rpcgen.py" beforeDir="false" afterPath="$PROJECT_DIR$/deps/libevent/event_rpcgen.py" afterDir="false" />
@@ -70,7 +131,6 @@
       <change beforePath="$PROJECT_DIR$/deps/libevent/test/rpcgen_wrapper.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deps/libevent/test/rpcgen_wrapper.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/libevent/test/test-ratelim.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deps/libevent/test/test-ratelim.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deps/libevent/test/test.sh" beforeDir="false" afterPath="$PROJECT_DIR$/deps/libevent/test/test.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/sql/executor/execute_stage.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/sql/executor/execute_stage.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,23 +146,27 @@
     <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/deps/common/conf/ini.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/deps/common/conf/ini.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/observer/storage/common/table.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/observer/storage/default/lrucache.hpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/observer/storage/default/disk_buffer_pool.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/observer/storage/common/condition_filter.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/observer/storage/common/field_meta.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/observer/storage/common/bplus_tree.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/observer/storage/common/db.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/observer/sql/parser/parse.cpp" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/CMakeLists.txt" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/observer/sql/parser/resolve_stage.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/observer/storage/common/bplus_tree_index.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/observer/storage/common/table.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/deps/common/conf/ini.h" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/observer/sql/parser/parse.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/observer/storage/common/db.h" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/observer/storage/common/field_meta.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/deps/common/conf/ini.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/observer/storage/common/bplus_tree_index.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/observer/storage/default/lrucache.hpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/observer/storage/common/condition_filter.cpp" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/src/observer/rc.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/observer/sql/executor/execution_node.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/observer/sql/executor/execute_stage.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/observer/sql/parser/resolve_stage.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/unitest/bp_manager_test.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/observer/CMakeLists.txt" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/observer/sql/executor/tuple.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/observer/storage/common/bplus_tree_index.cpp" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/observer/storage/common/bplus_tree_index.h" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/observer/rc.h" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -129,7 +193,7 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="structure.view.defaults.are.configured" value="true" />
   </component>
-  <component name="RunManager" selected="CMake Application.observer">
+  <component name="RunManager" selected="CMake Application.obclient">
     <configuration name="bitmap_test" type="CMakeGoogleTestRunConfigurationType" factoryName="Google Test" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minidb" TARGET_NAME="bitmap_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minidb" RUN_TARGET_NAME="bitmap_test" TEST_MODE="SUITE_TEST">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
@@ -152,6 +216,11 @@
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
         <option name="BeforeTestRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="bplus_tree_test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="minidb" TARGET_NAME="bplus_tree_test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="minidb" RUN_TARGET_NAME="bplus_tree_test">

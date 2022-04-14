@@ -81,8 +81,8 @@ bin/rc_test: unitest/CMakeFiles/rc_test.dir/rc_test.cpp.o
 bin/rc_test: unitest/CMakeFiles/rc_test.dir/build.make
 bin/rc_test: lib/libobserver.a
 bin/rc_test: lib/libcommon.so.1.0.0
-bin/rc_test: libevent/lib/libevent.a
-bin/rc_test: libevent/lib/libevent_core.a
+bin/rc_test: lib/libevent.a
+bin/rc_test: lib/libevent_core.a
 bin/rc_test: lib/libjsoncpp.a
 bin/rc_test: unitest/CMakeFiles/rc_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/rc_test"

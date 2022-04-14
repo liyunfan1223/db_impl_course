@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "lib/libevent_extra.a"
+  "../lib/libevent_extra.a"
 )

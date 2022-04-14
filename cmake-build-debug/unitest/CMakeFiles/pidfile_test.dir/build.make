@@ -81,8 +81,8 @@ bin/pidfile_test: unitest/CMakeFiles/pidfile_test.dir/pidfile_test.cpp.o
 bin/pidfile_test: unitest/CMakeFiles/pidfile_test.dir/build.make
 bin/pidfile_test: lib/libobserver.a
 bin/pidfile_test: lib/libcommon.so.1.0.0
-bin/pidfile_test: libevent/lib/libevent.a
-bin/pidfile_test: libevent/lib/libevent_core.a
+bin/pidfile_test: lib/libevent.a
+bin/pidfile_test: lib/libevent_core.a
 bin/pidfile_test: lib/libjsoncpp.a
 bin/pidfile_test: unitest/CMakeFiles/pidfile_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/pidfile_test"

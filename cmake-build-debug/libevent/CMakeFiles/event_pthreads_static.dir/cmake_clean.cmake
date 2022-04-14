@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
+  "../bin/libevent_pthreads.pdb"
+  "../lib/libevent_pthreads.a"
   "CMakeFiles/event_pthreads_static.dir/evthread_pthread.c.o"
-  "lib/libevent_pthreads.a"
-  "lib/libevent_pthreads.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

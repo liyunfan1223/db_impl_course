@@ -81,8 +81,8 @@ bin/bp_manager_test: unitest/CMakeFiles/bp_manager_test.dir/bp_manager_test.cpp.
 bin/bp_manager_test: unitest/CMakeFiles/bp_manager_test.dir/build.make
 bin/bp_manager_test: lib/libobserver.a
 bin/bp_manager_test: lib/libcommon.so.1.0.0
-bin/bp_manager_test: libevent/lib/libevent.a
-bin/bp_manager_test: libevent/lib/libevent_core.a
+bin/bp_manager_test: lib/libevent.a
+bin/bp_manager_test: lib/libevent_core.a
 bin/bp_manager_test: lib/libjsoncpp.a
 bin/bp_manager_test: unitest/CMakeFiles/bp_manager_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/bp_manager_test"

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "../bin/libevent.pdb"
+  "../lib/libevent.a"
   "CMakeFiles/event_static.dir/buffer.c.o"
   "CMakeFiles/event_static.dir/bufferevent.c.o"
   "CMakeFiles/event_static.dir/bufferevent_filter.c.o"
@@ -22,8 +24,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/event_static.dir/select.c.o"
   "CMakeFiles/event_static.dir/signal.c.o"
   "CMakeFiles/event_static.dir/strlcpy.c.o"
-  "lib/libevent.a"
-  "lib/libevent.pdb"
 )
 
 # Per-language clean rules from dependency scanning.

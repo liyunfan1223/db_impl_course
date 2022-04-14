@@ -651,8 +651,8 @@ bin/observer: src/observer/CMakeFiles/observer.dir/storage/trx/trx.cpp.o
 bin/observer: src/observer/CMakeFiles/observer.dir/build.make
 bin/observer: lib/libcommon.so.1.0.0
 bin/observer: lib/libjsoncpp.a
-bin/observer: libevent/lib/libevent.a
-bin/observer: libevent/lib/libevent_core.a
+bin/observer: lib/libevent.a
+bin/observer: lib/libevent_core.a
 bin/observer: src/observer/CMakeFiles/observer.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_40) "Linking CXX executable ../../bin/observer"
 	cd /home/jack/miniob/cmake-build-debug/src/observer && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/observer.dir/link.txt --verbose=$(VERBOSE)

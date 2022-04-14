@@ -1,3 +1,3 @@
 file(REMOVE_RECURSE
-  "lib/libevent_pthreads.a"
+  "../lib/libevent_pthreads.a"
 )

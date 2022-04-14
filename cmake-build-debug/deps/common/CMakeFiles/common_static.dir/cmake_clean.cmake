@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
+  "../../bin/libcommon.pdb"
   "../../lib/libcommon.a"
-  "../../lib/libcommon.pdb"
   "CMakeFiles/common_static.dir/conf/ini.cpp.o"
   "CMakeFiles/common_static.dir/io/io.cpp.o"
   "CMakeFiles/common_static.dir/io/roll_select_dir.cpp.o"

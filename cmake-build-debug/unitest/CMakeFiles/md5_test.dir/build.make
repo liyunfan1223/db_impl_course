@@ -81,8 +81,8 @@ bin/md5_test: unitest/CMakeFiles/md5_test.dir/md5_test.cpp.o
 bin/md5_test: unitest/CMakeFiles/md5_test.dir/build.make
 bin/md5_test: lib/libobserver.a
 bin/md5_test: lib/libcommon.so.1.0.0
-bin/md5_test: libevent/lib/libevent.a
-bin/md5_test: libevent/lib/libevent_core.a
+bin/md5_test: lib/libevent.a
+bin/md5_test: lib/libevent_core.a
 bin/md5_test: lib/libjsoncpp.a
 bin/md5_test: unitest/CMakeFiles/md5_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/md5_test"

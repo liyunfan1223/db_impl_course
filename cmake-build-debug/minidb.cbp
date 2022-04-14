@@ -370,7 +370,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="event_core_static">
-				<Option output="/home/jack/miniob/cmake-build-debug/libevent/lib/libevent_core.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/jack/miniob/cmake-build-debug/lib/libevent_core.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jack/miniob/cmake-build-debug/libevent"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -403,7 +403,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="event_core_static/fast">
-				<Option output="/home/jack/miniob/cmake-build-debug/libevent/lib/libevent_core.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/jack/miniob/cmake-build-debug/lib/libevent_core.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jack/miniob/cmake-build-debug/libevent"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -436,7 +436,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="event_extra_static">
-				<Option output="/home/jack/miniob/cmake-build-debug/libevent/lib/libevent_extra.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/jack/miniob/cmake-build-debug/lib/libevent_extra.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jack/miniob/cmake-build-debug/libevent"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -469,7 +469,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="event_extra_static/fast">
-				<Option output="/home/jack/miniob/cmake-build-debug/libevent/lib/libevent_extra.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/jack/miniob/cmake-build-debug/lib/libevent_extra.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jack/miniob/cmake-build-debug/libevent"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -502,7 +502,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="event_pthreads_static">
-				<Option output="/home/jack/miniob/cmake-build-debug/libevent/lib/libevent_pthreads.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/jack/miniob/cmake-build-debug/lib/libevent_pthreads.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jack/miniob/cmake-build-debug/libevent"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -535,7 +535,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="event_pthreads_static/fast">
-				<Option output="/home/jack/miniob/cmake-build-debug/libevent/lib/libevent_pthreads.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/jack/miniob/cmake-build-debug/lib/libevent_pthreads.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jack/miniob/cmake-build-debug/libevent"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -568,7 +568,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="event_static">
-				<Option output="/home/jack/miniob/cmake-build-debug/libevent/lib/libevent.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/jack/miniob/cmake-build-debug/lib/libevent.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jack/miniob/cmake-build-debug/libevent"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -601,7 +601,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="event_static/fast">
-				<Option output="/home/jack/miniob/cmake-build-debug/libevent/lib/libevent.a" prefix_auto="0" extension_auto="0"/>
+				<Option output="/home/jack/miniob/cmake-build-debug/lib/libevent.a" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/home/jack/miniob/cmake-build-debug/libevent"/>
 				<Option object_output="./"/>
 				<Option type="2"/>
@@ -2195,9 +2195,6 @@
 			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
 		</Unit>
 		<Unit filename="/home/jack/miniob/deps/libevent/cmake/CheckFunctionKeywords.cmake">
-			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
-		</Unit>
-		<Unit filename="/home/jack/miniob/deps/libevent/cmake/CheckPrototypeDefinition.c.in">
 			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
 		</Unit>
 		<Unit filename="/home/jack/miniob/deps/libevent/cmake/CheckPrototypeDefinition.cmake">

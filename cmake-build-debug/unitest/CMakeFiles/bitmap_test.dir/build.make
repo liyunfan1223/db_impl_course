@@ -81,8 +81,8 @@ bin/bitmap_test: unitest/CMakeFiles/bitmap_test.dir/bitmap_test.cpp.o
 bin/bitmap_test: unitest/CMakeFiles/bitmap_test.dir/build.make
 bin/bitmap_test: lib/libobserver.a
 bin/bitmap_test: lib/libcommon.so.1.0.0
-bin/bitmap_test: libevent/lib/libevent.a
-bin/bitmap_test: libevent/lib/libevent_core.a
+bin/bitmap_test: lib/libevent.a
+bin/bitmap_test: lib/libevent_core.a
 bin/bitmap_test: lib/libjsoncpp.a
 bin/bitmap_test: unitest/CMakeFiles/bitmap_test.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jack/miniob/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../bin/bitmap_test"
