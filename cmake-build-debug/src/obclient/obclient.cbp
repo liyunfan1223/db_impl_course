@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="obclient"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\deps\;CMake Files\deps\common\;CMake Files\deps\jsoncpp\;CMake Files\deps\jsoncpp\include\;CMake Files\deps\jsoncpp\cmake\;CMake Files\deps\jsoncpp\pkg-config\;CMake Files\deps\jsoncpp\src\;CMake Files\deps\jsoncpp\src\lib_json\;CMake Files\deps\libevent\;CMake Files\deps\libevent\cmake\;CMake Files\src\;CMake Files\src\obclient\;CMake Files\src\observer\;CMake Files\unitest\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\usr\;CMake Files\..\..\..\usr\local\;CMake Files\..\..\..\usr\local\lib\;CMake Files\..\..\..\usr\local\lib\cmake\;CMake Files\..\..\..\usr\local\lib\cmake\GTest\;CMake Files\test\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/jack/miniob/cmake-build-debug/src/obclient"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jack/miniob/cmake-build-debug/src/obclient/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jack/miniob/cmake-build-debug/src/obclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jack/miniob/cmake-build-debug/src/obclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jack/miniob/cmake-build-debug/src/obclient/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="obclient">
+				<Option output="/home/jack/miniob/cmake-build-debug/bin/obclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/miniob/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUNIX"/>
+					<Add option="-DLINUX"/>
+					<Add directory="/home/jack/miniob/src/obclient/."/>
+					<Add directory="/home/jack/miniob/src/obclient/../../deps"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jack/miniob/cmake-build-debug/src/obclient/Makefile&quot;  VERBOSE=1 obclient"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jack/miniob/cmake-build-debug/src/obclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jack/miniob/cmake-build-debug/src/obclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jack/miniob/cmake-build-debug/src/obclient/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="obclient/fast">
+				<Option output="/home/jack/miniob/cmake-build-debug/bin/obclient" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/jack/miniob/cmake-build-debug/bin"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUNIX"/>
+					<Add option="-DLINUX"/>
+					<Add directory="/home/jack/miniob/src/obclient/."/>
+					<Add directory="/home/jack/miniob/src/obclient/../../deps"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/jack/miniob/cmake-build-debug/src/obclient/Makefile&quot;  VERBOSE=1 obclient/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/jack/miniob/cmake-build-debug/src/obclient/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/jack/miniob/cmake-build-debug/src/obclient/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/jack/miniob/cmake-build-debug/src/obclient/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/jack/miniob/src/obclient/client.cpp">
+			<Option target="obclient"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/common/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\common\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/jsoncpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/jsoncpp/jsoncppConfig.cmake.in">
+			<Option virtualFolder="CMake Files\deps\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/jsoncpp/version.in">
+			<Option virtualFolder="CMake Files\deps\jsoncpp\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/jsoncpp/include/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\jsoncpp\include\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/jsoncpp/include/PreventInBuildInstalls.cmake">
+			<Option virtualFolder="CMake Files\deps\jsoncpp\include\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/jsoncpp/include/PreventInSourceBuilds.cmake">
+			<Option virtualFolder="CMake Files\deps\jsoncpp\include\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/jsoncpp/cmake/JoinPaths.cmake">
+			<Option virtualFolder="CMake Files\deps\jsoncpp\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/jsoncpp/pkg-config/jsoncpp.pc.in">
+			<Option virtualFolder="CMake Files\deps\jsoncpp\pkg-config\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/jsoncpp/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\jsoncpp\src\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/jsoncpp/src/lib_json/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\jsoncpp\src\lib_json\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\deps\libevent\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/evconfig-private.h.cmake">
+			<Option virtualFolder="CMake Files\deps\libevent\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/event-config.h.cmake">
+			<Option virtualFolder="CMake Files\deps\libevent\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/libevent.pc.in">
+			<Option virtualFolder="CMake Files\deps\libevent\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/libevent_core.pc.in">
+			<Option virtualFolder="CMake Files\deps\libevent\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/libevent_extra.pc.in">
+			<Option virtualFolder="CMake Files\deps\libevent\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/libevent_pthreads.pc.in">
+			<Option virtualFolder="CMake Files\deps\libevent\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/cmake/AddCompilerFlags.cmake">
+			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/cmake/AddEventLibrary.cmake">
+			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/cmake/CheckConstExists.cmake">
+			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/cmake/CheckFileOffsetBits.cmake">
+			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/cmake/CheckFunctionKeywords.cmake">
+			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/cmake/CheckPrototypeDefinition.c.in">
+			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/cmake/CheckPrototypeDefinition.cmake">
+			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/cmake/LibeventConfig.cmake.in">
+			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/cmake/LibeventConfigVersion.cmake.in">
+			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/cmake/Macros.cmake">
+			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/cmake/Uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/deps/libevent/cmake/VersionViaGit.cmake">
+			<Option virtualFolder="CMake Files\deps\libevent\cmake\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/src/obclient/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\obclient\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/src/observer/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\src\observer\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/unitest/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\unitest\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/../../../usr/local/lib/cmake/GTest/GTestConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\GTest\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/../../../usr/local/lib/cmake/GTest/GTestConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\GTest\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/../../../usr/local/lib/cmake/GTest/GTestTargets-noconfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\GTest\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/../../../usr/local/lib/cmake/GTest/GTestTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\usr\local\lib\cmake\GTest\"/>
+		</Unit>
+		<Unit filename="/home/jack/miniob/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

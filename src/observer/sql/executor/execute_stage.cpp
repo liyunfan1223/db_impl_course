@@ -220,6 +220,18 @@ std::string agg_to_string(Aggregation agg) {
     //TODO AGG_MIN
     //TODO AGG_COUNT
     //TODO AGG_AVG
+      case AGG_MAX:
+          res += "MAX";
+          break;
+      case AGG_MIN:
+          res += "MIN";
+          break;
+      case AGG_COUNT:
+          res += "COUNT";
+          break;
+      case AGG_AVG:
+          res += "AVG";
+          break;
   }
   res += "(";
   if (1 == agg.is_value) {
@@ -231,10 +243,28 @@ std::string agg_to_string(Aggregation agg) {
       //TODO INT
       //TODO FLOAT
       //TODO DATES
+        case UNDEFINED:
+            break;
+        case CHARS:
+            break;
+        case INTS:
+            res += std::to_string(*(int *)val);
+            break;
+        case DATES:
+            res += "DATES";
+            break;
+        case FLOATS:
+            res += std::to_string(*(float *)val);
+            break;
     }
   }
   else{
     //TODO 如果有relation_name和field_name的话也要添加
+    if (agg.attribute.relation_name != NULL) {
+        res += agg.attribute.relation_name;
+        res += ".";
+    }
+    res += agg.attribute.attribute_name;
   }
   res += ")";
   return res;
@@ -245,25 +275,149 @@ void aggregation_exec(const Selects &selects, TupleSet *res_tuples) {
     TupleSchema agg_schema;
     //TODO 设置schema
     //TODO 依次添加字段值
+    for (size_t i = 0; i < selects.aggregation_num; i++) {
+        const Aggregation &agg = selects.aggregations[i];
+        int idx = -1;
+        auto &temp = res_tuples->get_schema();
+        auto &fields = res_tuples->get_schema().fields();
+        for (int i = 0; i < res_tuples->schema().fields().size(); i++) {
+            if (agg.attribute.attribute_name == NULL) continue; // 处理count(1)情况
+            if ( (agg.attribute.relation_name == NULL || strcmp(agg.attribute.relation_name, fields[i].table_name()) == 0) &&
+            (strcmp(agg.attribute.attribute_name, fields[i].field_name()) == 0) ) {
+                idx = i;
+                break;
+            }
+        }
+        if (idx == -1) {
+            agg_schema.add(INTS, "", agg_to_string(agg).c_str());
+        } else {
+            auto tupleField = res_tuples->get_schema().field(idx);
+            agg_schema.add(tupleField.type(), tupleField.table_name(), agg_to_string(agg).c_str());
+        }
+    }
     Tuple out;
     for (size_t i = 0; i < selects.aggregation_num; i++) {
       const Aggregation &agg = selects.aggregations[i];
       const std::vector<Tuple> &tuples = res_tuples->tuples();
-      switch (agg.func_name) {
-        case FuncName::AGG_MAX:
+//      TupleValue tupleValue;
+        int idx = -1;
+        auto fields = res_tuples->get_schema().fields();
+        for (int i = 0; i < res_tuples->schema().fields().size(); i++) {
+            if (agg.attribute.attribute_name == NULL) continue; // 处理count(1)情况
+            if ( (agg.attribute.relation_name == NULL || strcmp(agg.attribute.relation_name, fields[i].table_name()) == 0) &&
+                 (strcmp(agg.attribute.attribute_name, fields[i].field_name()) == 0) ) {
+                idx = i;
+                break;
+            }
+        }
+        AttrType attrType;
+        if (idx != -1) {
+            attrType = res_tuples->get_schema().field(idx).type();
+        }
+        switch (agg.func_name) {
+
+        case FuncName::AGG_MAX: {
+            switch (attrType) {
+                case INTS: {
+                    int mx = -999999999;
+                    for (auto &tuple: tuples) {
+                        int val = ((IntValue *) tuple.get_pointer(idx).get())->get_value();
+                        mx = std::max(mx, val);
+                    }
+                    out.add(mx);
+                    break;
+                }
+                case FLOATS: {
+                    float mx = -999999999;
+                    for (auto &tuple: tuples) {
+                        float val = ((FloatValue *) tuple.get_pointer(idx).get())->get_value();
+                        float mx = std::max(mx, val);
+                    }
+                    out.add(mx);
+                    break;
+                }
+            }
+            break;
+        }
         case FuncName::AGG_MIN: {
           //TODO 遍历所有元组，获取最值
-          //TODO 增加这条记录
+
+            switch (attrType) {
+                case INTS: {
+                    int mn = 999999999;
+                    for (auto &tuple: tuples) {
+                        int val = ((IntValue *) tuple.get_pointer(idx).get())->get_value();
+                        mn = std::min(mn, val);
+                    }
+                    out.add(mn);
+                    break;
+                }
+                case FLOATS: {
+                    float mn = 999999999;
+                    for (auto &tuple: tuples) {
+                        float val = ((FloatValue *) tuple.get_pointer(idx).get())->get_value();
+                        float mn = std::min(mn, val);
+                    }
+                    out.add(mn);
+                    break;
+                }
+            }
+            break;
+        //TODO 增加这条记录
         }
         case FuncName::AGG_COUNT: {
           // 值为size的大小
-          //TODO 增加这条记录
-        }
-        case FuncName::AGG_AVG: {
-          //TODO 遍历所有元组，获取和
-          float sum = 0;
+          // count(1) or count(id)?
+          if (idx == -1) {
+              out.add((int)tuples.size());
+          } else {
+              switch (attrType) {
+                  case INTS: {
+                      int cnt = 0;
+                      for (auto &tuple: tuples) {
+                          int val = ((IntValue *) tuple.get_pointer(idx).get())->get_value();
+                          if (val != NULL) cnt++;
+                      }
+                      out.add(cnt);
+                      break;
+                  }
+                  case FLOATS: {
+                      int cnt = 0;
+                      for (auto &tuple: tuples) {
+                          float val = ((FloatValue *) tuple.get_pointer(idx).get())->get_value();
+                          if (val != NULL) cnt++;
+                      }
+                      out.add(cnt);
+                      break;
+                  }
+              }
+
+          }
           //TODO 增加这条记录
           break;
+        }
+        case FuncName::AGG_AVG: {
+            //TODO 遍历所有元组，获取和
+            float sum = 0;
+            switch (attrType) {
+                case INTS: {
+                    for (auto &tuple: tuples) {
+                        int val = ((IntValue *) tuple.get_pointer(idx).get())->get_value();
+                        sum += val;
+                    }
+                    break;
+                }
+                case FLOATS: {
+                    for (auto &tuple: tuples) {
+                        float val = ((FloatValue *) tuple.get_pointer(idx).get())->get_value();
+                        sum += val;
+                    }
+                    break;
+                }
+            }
+            //TODO 增加这条记录
+            out.add(sum / tuples.size());
+            break;
         }
       }
     }
@@ -278,22 +432,37 @@ void aggregation_exec(const Selects &selects, TupleSet *res_tuples) {
 // 需要满足多表联查条件
 bool match_join_condition(const Tuple *res_tuple,
                           const std::vector<std::vector<int>> condition_idxs) {
-  // res_tuple 是 需要进行筛选的某一行
-  // condition_idxs 是 C x 3 数组
-  // 每一条的3个元素代表（左值的属性在新schema的下标，CompOp运算符，右值的属性在新schema的下标）
-  //TODO 判断表中某一行 res_tuple 是否满足多表联查条件即：左值=右值
-
-  return true;
+    // res_tuple 是 需要进行筛选的某一行
+    // condition_idxs 是 C x 3 数组
+    // 每一条的3个元素代表（左值的属性在新schema的下标，CompOp运算符，右值的属性在新schema的下标）
+    //TODO 判断表中某一行 res_tuple 是否满足多表联查条件即：左值=右值
+    for (int i = 0; i < condition_idxs.size(); i++) {
+        CompOp comp = CompOp(condition_idxs[i][1]);
+        const TupleValue &left_value = res_tuple->get(condition_idxs[i][0]);
+        const TupleValue &right_value = res_tuple->get(condition_idxs[i][2]);
+        if (comp == EQUAL_TO && left_value.compare(right_value)) {
+            return false;
+        }
+    }
+    return true;
 }
-
 // 将多段小元组合成一个大元组
 Tuple merge_tuples(
-    const std::vector<std::vector<Tuple>::const_iterator> temp_tuples,
-    std::vector<int> orders) {
-  std::vector<std::shared_ptr<TupleValue>> temp_res;
-  Tuple res_tuple;
-  //TODO 先把每个字段都放到对应的位置上(temp_res)
-  //TODO 再依次(orders)添加到大元组(res_tuple)里即可
+        const std::vector<std::vector<Tuple>::const_iterator> temp_tuples,
+        std::vector<int> orders) {
+    std::vector<std::shared_ptr<TupleValue>> temp_res;
+    Tuple res_tuple;
+    //TODO 先把每个字段都放到对应的位置上(temp_res)
+    //TODO 再依次(orders)添加到大元组(res_tuple)里即可
+    for (auto iter: temp_tuples) {
+        for (auto value: iter->values()) {
+            temp_res.push_back(value);
+        }
+    }
+    for (int order: orders) {
+        res_tuple.add(temp_res[order]);
+    }
+    return res_tuple;
 }
 
 // 这里没有对输入的某些信息做合法性校验，比如查询的列名、where条件中的列名等，没有做必要的合法性校验
@@ -364,6 +533,20 @@ RC ExecuteStage::do_select(const char *db, const Query *sql,
     // 如果是select * ，添加所有字段
     // 如果是select t1.*，表名匹配的加入字段
     // 如果是select t1.age，表名+字段名匹配的加入字段
+
+    std::vector<int> orders;
+    for (int i = selects.attr_num - 1; i >= 0; i--) {
+        for (int j = 0; j < old_schema.fields().size(); j++) {
+            if (selects.attributes[i].relation_name == NULL
+                || (strcmp(selects.attributes[i].relation_name, old_schema.field(j).table_name()) == 0
+                    && (strcmp(selects.attributes[i].attribute_name, old_schema.field(j).field_name()) == 0
+                        || strcmp(selects.attributes[i].attribute_name, "*") == 0))) {
+                join_schema.add(old_schema.field(j));
+                orders.push_back(j);
+            }
+        }
+    }
+
     print_tuples.set_schema(join_schema);
 
     // 构建联查的conditions需要找到对应的表
@@ -390,11 +573,30 @@ RC ExecuteStage::do_select(const char *db, const Query *sql,
     }
     //TODO 元组的拼接需要实现笛卡尔积
     //TODO 将符合连接条件的元组添加到print_tables中
-
+    int tuple_number = 1;
+    std::vector<int> rec_tot(tuple_sets.size());
+    for (int i = tuple_sets.size() - 1; i >= 0; i--) {
+        auto rit = &tuple_sets[i];
+        rec_tot[i] = tuple_number;
+        tuple_number *= rit->size();
+    }
+    for (int i = 0; i < tuple_number; i++) {
+        std::vector<std::vector<Tuple>::const_iterator> vec;
+        for (int j = tuple_sets.size() - 1; j >= 0; j--) {
+            auto rit = &tuple_sets[j];
+            vec.push_back(rit->tuples().begin() + (i / rec_tot[j]) % rit->size());
+        }
+        Tuple merge_res = merge_tuples(vec, orders);
+        bool c = match_join_condition(&merge_res, condition_idxs);
+        if (c)
+            print_tuples.add(std::move(merge_res));
     //TODO 添加聚合算子
+        aggregation_exec(selects, &print_tuples);
       print_tuples.print(ss);
-    } else {
+    }
+  } else {
     //TODO 添加聚合算子
+      aggregation_exec(selects, &tuple_sets.front());
     // 当前只查询一张表，直接返回结果即可
       tuple_sets.front().print(ss);
     }

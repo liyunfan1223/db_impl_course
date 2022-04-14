@@ -1,0 +1,1178 @@
+Determining if files fcntl.h;inttypes.h;memory.h;signal.h;stdarg.h;stddef.h;stdint.h;stdlib.h;string.h;errno.h;unistd.h;time.h;sys/types.h;sys/stat.h;sys/time.h;sys/param.h;netdb.h;dlfcn.h;arpa/inet.h;poll.h;port.h exist failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f9725/fast && /usr/bin/make -f CMakeFiles/cmTC_f9725.dir/build.make CMakeFiles/cmTC_f9725.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f9725.dir/EVENT__HAVE_PORT_H.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_f9725.dir/EVENT__HAVE_PORT_H.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CheckIncludeFiles/EVENT__HAVE_PORT_H.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CheckIncludeFiles/EVENT__HAVE_PORT_H.c:22:10: fatal error: port.h: No such file or directory
+   22 | #include <port.h>
+      |          ^~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_f9725.dir/build.make:66: CMakeFiles/cmTC_f9725.dir/EVENT__HAVE_PORT_H.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f9725/fast] Error 2
+
+
+Source:
+/* */
+#include <fcntl.h>
+#include <inttypes.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <unistd.h>
+#include <time.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/param.h>
+#include <netdb.h>
+#include <dlfcn.h>
+#include <arpa/inet.h>
+#include <poll.h>
+#include <port.h>
+
+
+int main(void){return 0;}
+
+Determining if files fcntl.h;inttypes.h;memory.h;signal.h;stdarg.h;stddef.h;stdint.h;stdlib.h;string.h;errno.h;unistd.h;time.h;sys/types.h;sys/stat.h;sys/time.h;sys/param.h;netdb.h;dlfcn.h;arpa/inet.h;poll.h;sys/socket.h;sys/random.h;sys/un.h;sys/devpoll.h exist failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6eee3/fast && /usr/bin/make -f CMakeFiles/cmTC_6eee3.dir/build.make CMakeFiles/cmTC_6eee3.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6eee3.dir/EVENT__HAVE_SYS_DEVPOLL_H.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_6eee3.dir/EVENT__HAVE_SYS_DEVPOLL_H.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CheckIncludeFiles/EVENT__HAVE_SYS_DEVPOLL_H.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CheckIncludeFiles/EVENT__HAVE_SYS_DEVPOLL_H.c:25:10: fatal error: sys/devpoll.h: No such file or directory
+   25 | #include <sys/devpoll.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_6eee3.dir/build.make:66: CMakeFiles/cmTC_6eee3.dir/EVENT__HAVE_SYS_DEVPOLL_H.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_6eee3/fast] Error 2
+
+
+Source:
+/* */
+#include <fcntl.h>
+#include <inttypes.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <unistd.h>
+#include <time.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/param.h>
+#include <netdb.h>
+#include <dlfcn.h>
+#include <arpa/inet.h>
+#include <poll.h>
+#include <sys/socket.h>
+#include <sys/random.h>
+#include <sys/un.h>
+#include <sys/devpoll.h>
+
+
+int main(void){return 0;}
+
+Determining if files fcntl.h;inttypes.h;memory.h;signal.h;stdarg.h;stddef.h;stdint.h;stdlib.h;string.h;errno.h;unistd.h;time.h;sys/types.h;sys/stat.h;sys/time.h;sys/param.h;netdb.h;dlfcn.h;arpa/inet.h;poll.h;sys/socket.h;sys/random.h;sys/un.h;sys/epoll.h;sys/eventfd.h;sys/event.h exist failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_767cb/fast && /usr/bin/make -f CMakeFiles/cmTC_767cb.dir/build.make CMakeFiles/cmTC_767cb.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_767cb.dir/EVENT__HAVE_SYS_EVENT_H.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_767cb.dir/EVENT__HAVE_SYS_EVENT_H.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CheckIncludeFiles/EVENT__HAVE_SYS_EVENT_H.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CheckIncludeFiles/EVENT__HAVE_SYS_EVENT_H.c:27:10: fatal error: sys/event.h: No such file or directory
+   27 | #include <sys/event.h>
+      |          ^~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_767cb.dir/build.make:66: CMakeFiles/cmTC_767cb.dir/EVENT__HAVE_SYS_EVENT_H.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_767cb/fast] Error 2
+
+
+Source:
+/* */
+#include <fcntl.h>
+#include <inttypes.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <unistd.h>
+#include <time.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/param.h>
+#include <netdb.h>
+#include <dlfcn.h>
+#include <arpa/inet.h>
+#include <poll.h>
+#include <sys/socket.h>
+#include <sys/random.h>
+#include <sys/un.h>
+#include <sys/epoll.h>
+#include <sys/eventfd.h>
+#include <sys/event.h>
+
+
+int main(void){return 0;}
+
+Determining if files fcntl.h;inttypes.h;memory.h;signal.h;stdarg.h;stddef.h;stdint.h;stdlib.h;string.h;errno.h;unistd.h;time.h;sys/types.h;sys/stat.h;sys/time.h;sys/param.h;netdb.h;dlfcn.h;arpa/inet.h;poll.h;sys/socket.h;sys/random.h;sys/un.h;sys/epoll.h;sys/eventfd.h;sys/ioctl.h;sys/mman.h;sys/queue.h;sys/select.h;sys/sendfile.h;sys/uio.h;sys/wait.h;sys/resource.h;sys/timerfd.h;netinet/in.h;netinet/in6.h exist failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ef4ae/fast && /usr/bin/make -f CMakeFiles/cmTC_ef4ae.dir/build.make CMakeFiles/cmTC_ef4ae.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ef4ae.dir/EVENT__HAVE_NETINET_IN6_H.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_ef4ae.dir/EVENT__HAVE_NETINET_IN6_H.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CheckIncludeFiles/EVENT__HAVE_NETINET_IN6_H.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CheckIncludeFiles/EVENT__HAVE_NETINET_IN6_H.c:37:10: fatal error: netinet/in6.h: No such file or directory
+   37 | #include <netinet/in6.h>
+      |          ^~~~~~~~~~~~~~~
+compilation terminated.
+make[1]: *** [CMakeFiles/cmTC_ef4ae.dir/build.make:66: CMakeFiles/cmTC_ef4ae.dir/EVENT__HAVE_NETINET_IN6_H.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_ef4ae/fast] Error 2
+
+
+Source:
+/* */
+#include <fcntl.h>
+#include <inttypes.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <unistd.h>
+#include <time.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/param.h>
+#include <netdb.h>
+#include <dlfcn.h>
+#include <arpa/inet.h>
+#include <poll.h>
+#include <sys/socket.h>
+#include <sys/random.h>
+#include <sys/un.h>
+#include <sys/epoll.h>
+#include <sys/eventfd.h>
+#include <sys/ioctl.h>
+#include <sys/mman.h>
+#include <sys/queue.h>
+#include <sys/select.h>
+#include <sys/sendfile.h>
+#include <sys/uio.h>
+#include <sys/wait.h>
+#include <sys/resource.h>
+#include <sys/timerfd.h>
+#include <netinet/in.h>
+#include <netinet/in6.h>
+
+
+int main(void){return 0;}
+
+Determining if the strlcpy exist failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_286c8/fast && /usr/bin/make -f CMakeFiles/cmTC_286c8.dir/build.make CMakeFiles/cmTC_286c8.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_286c8.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_286c8.dir/CheckSymbolExists.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: error: ‘strlcpy’ undeclared (first use in this function); did you mean ‘strncpy’?
+   45 |   return ((int*)(&strlcpy))[argc];
+      |                   ^~~~~~~
+      |                   strncpy
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+   41 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+make[1]: *** [CMakeFiles/cmTC_286c8.dir/build.make:66: CMakeFiles/cmTC_286c8.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_286c8/fast] Error 2
+
+
+File /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+#include <inttypes.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <unistd.h>
+#include <time.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/param.h>
+#include <netdb.h>
+#include <dlfcn.h>
+#include <arpa/inet.h>
+#include <poll.h>
+#include <sys/socket.h>
+#include <sys/random.h>
+#include <sys/un.h>
+#include <sys/epoll.h>
+#include <sys/eventfd.h>
+#include <sys/ioctl.h>
+#include <sys/mman.h>
+#include <sys/queue.h>
+#include <sys/select.h>
+#include <sys/sendfile.h>
+#include <sys/uio.h>
+#include <sys/wait.h>
+#include <sys/resource.h>
+#include <sys/timerfd.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <ifaddrs.h>
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the port_create exist failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_818f8/fast && /usr/bin/make -f CMakeFiles/cmTC_818f8.dir/build.make CMakeFiles/cmTC_818f8.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_818f8.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_818f8.dir/CheckSymbolExists.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: error: ‘port_create’ undeclared (first use in this function); did you mean ‘epoll_create’?
+   45 |   return ((int*)(&port_create))[argc];
+      |                   ^~~~~~~~~~~
+      |                   epoll_create
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+   41 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+make[1]: *** [CMakeFiles/cmTC_818f8.dir/build.make:66: CMakeFiles/cmTC_818f8.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_818f8/fast] Error 2
+
+
+File /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+#include <inttypes.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <unistd.h>
+#include <time.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/param.h>
+#include <netdb.h>
+#include <dlfcn.h>
+#include <arpa/inet.h>
+#include <poll.h>
+#include <sys/socket.h>
+#include <sys/random.h>
+#include <sys/un.h>
+#include <sys/epoll.h>
+#include <sys/eventfd.h>
+#include <sys/ioctl.h>
+#include <sys/mman.h>
+#include <sys/queue.h>
+#include <sys/select.h>
+#include <sys/sendfile.h>
+#include <sys/uio.h>
+#include <sys/wait.h>
+#include <sys/resource.h>
+#include <sys/timerfd.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <ifaddrs.h>
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef port_create
+  return ((int*)(&port_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the kqueue exist failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e70ae/fast && /usr/bin/make -f CMakeFiles/cmTC_e70ae.dir/build.make CMakeFiles/cmTC_e70ae.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e70ae.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_e70ae.dir/CheckSymbolExists.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: error: ‘kqueue’ undeclared (first use in this function); did you mean ‘sigqueue’?
+   45 |   return ((int*)(&kqueue))[argc];
+      |                   ^~~~~~
+      |                   sigqueue
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+   41 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+make[1]: *** [CMakeFiles/cmTC_e70ae.dir/build.make:66: CMakeFiles/cmTC_e70ae.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e70ae/fast] Error 2
+
+
+File /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+#include <inttypes.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <unistd.h>
+#include <time.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/param.h>
+#include <netdb.h>
+#include <dlfcn.h>
+#include <arpa/inet.h>
+#include <poll.h>
+#include <sys/socket.h>
+#include <sys/random.h>
+#include <sys/un.h>
+#include <sys/epoll.h>
+#include <sys/eventfd.h>
+#include <sys/ioctl.h>
+#include <sys/mman.h>
+#include <sys/queue.h>
+#include <sys/select.h>
+#include <sys/sendfile.h>
+#include <sys/uio.h>
+#include <sys/wait.h>
+#include <sys/resource.h>
+#include <sys/timerfd.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <ifaddrs.h>
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef kqueue
+  return ((int*)(&kqueue))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the sysctl exist failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_43481/fast && /usr/bin/make -f CMakeFiles/cmTC_43481.dir/build.make CMakeFiles/cmTC_43481.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43481.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_43481.dir/CheckSymbolExists.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: error: ‘sysctl’ undeclared (first use in this function); did you mean ‘syscall’?
+   45 |   return ((int*)(&sysctl))[argc];
+      |                   ^~~~~~
+      |                   syscall
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+   41 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+make[1]: *** [CMakeFiles/cmTC_43481.dir/build.make:66: CMakeFiles/cmTC_43481.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_43481/fast] Error 2
+
+
+File /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+#include <inttypes.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <unistd.h>
+#include <time.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/param.h>
+#include <netdb.h>
+#include <dlfcn.h>
+#include <arpa/inet.h>
+#include <poll.h>
+#include <sys/socket.h>
+#include <sys/random.h>
+#include <sys/un.h>
+#include <sys/epoll.h>
+#include <sys/eventfd.h>
+#include <sys/ioctl.h>
+#include <sys/mman.h>
+#include <sys/queue.h>
+#include <sys/select.h>
+#include <sys/sendfile.h>
+#include <sys/uio.h>
+#include <sys/wait.h>
+#include <sys/resource.h>
+#include <sys/timerfd.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <ifaddrs.h>
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef sysctl
+  return ((int*)(&sysctl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the arc4random exist failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e3f7a/fast && /usr/bin/make -f CMakeFiles/cmTC_e3f7a.dir/build.make CMakeFiles/cmTC_e3f7a.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e3f7a.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_e3f7a.dir/CheckSymbolExists.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: error: ‘arc4random’ undeclared (first use in this function)
+   45 |   return ((int*)(&arc4random))[argc];
+      |                   ^~~~~~~~~~
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+   41 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+make[1]: *** [CMakeFiles/cmTC_e3f7a.dir/build.make:66: CMakeFiles/cmTC_e3f7a.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e3f7a/fast] Error 2
+
+
+File /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+#include <inttypes.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <unistd.h>
+#include <time.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/param.h>
+#include <netdb.h>
+#include <dlfcn.h>
+#include <arpa/inet.h>
+#include <poll.h>
+#include <sys/socket.h>
+#include <sys/random.h>
+#include <sys/un.h>
+#include <sys/epoll.h>
+#include <sys/eventfd.h>
+#include <sys/ioctl.h>
+#include <sys/mman.h>
+#include <sys/queue.h>
+#include <sys/select.h>
+#include <sys/sendfile.h>
+#include <sys/uio.h>
+#include <sys/wait.h>
+#include <sys/resource.h>
+#include <sys/timerfd.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <ifaddrs.h>
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random
+  return ((int*)(&arc4random))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the arc4random_buf exist failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_16f59/fast && /usr/bin/make -f CMakeFiles/cmTC_16f59.dir/build.make CMakeFiles/cmTC_16f59.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_16f59.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_16f59.dir/CheckSymbolExists.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: error: ‘arc4random_buf’ undeclared (first use in this function)
+   45 |   return ((int*)(&arc4random_buf))[argc];
+      |                   ^~~~~~~~~~~~~~
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+   41 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+make[1]: *** [CMakeFiles/cmTC_16f59.dir/build.make:66: CMakeFiles/cmTC_16f59.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_16f59/fast] Error 2
+
+
+File /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+#include <inttypes.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <unistd.h>
+#include <time.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/param.h>
+#include <netdb.h>
+#include <dlfcn.h>
+#include <arpa/inet.h>
+#include <poll.h>
+#include <sys/socket.h>
+#include <sys/random.h>
+#include <sys/un.h>
+#include <sys/epoll.h>
+#include <sys/eventfd.h>
+#include <sys/ioctl.h>
+#include <sys/mman.h>
+#include <sys/queue.h>
+#include <sys/select.h>
+#include <sys/sendfile.h>
+#include <sys/uio.h>
+#include <sys/wait.h>
+#include <sys/resource.h>
+#include <sys/timerfd.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <ifaddrs.h>
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random_buf
+  return ((int*)(&arc4random_buf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the arc4random_addrandom exist failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a824e/fast && /usr/bin/make -f CMakeFiles/cmTC_a824e.dir/build.make CMakeFiles/cmTC_a824e.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a824e.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_a824e.dir/CheckSymbolExists.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: error: ‘arc4random_addrandom’ undeclared (first use in this function)
+   45 |   return ((int*)(&arc4random_addrandom))[argc];
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+   41 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+make[1]: *** [CMakeFiles/cmTC_a824e.dir/build.make:66: CMakeFiles/cmTC_a824e.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_a824e/fast] Error 2
+
+
+File /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+#include <inttypes.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <unistd.h>
+#include <time.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/param.h>
+#include <netdb.h>
+#include <dlfcn.h>
+#include <arpa/inet.h>
+#include <poll.h>
+#include <sys/socket.h>
+#include <sys/random.h>
+#include <sys/un.h>
+#include <sys/epoll.h>
+#include <sys/eventfd.h>
+#include <sys/ioctl.h>
+#include <sys/mman.h>
+#include <sys/queue.h>
+#include <sys/select.h>
+#include <sys/sendfile.h>
+#include <sys/uio.h>
+#include <sys/wait.h>
+#include <sys/resource.h>
+#include <sys/timerfd.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <ifaddrs.h>
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random_addrandom
+  return ((int*)(&arc4random_addrandom))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the issetugid exist failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4a6f2/fast && /usr/bin/make -f CMakeFiles/cmTC_4a6f2.dir/build.make CMakeFiles/cmTC_4a6f2.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4a6f2.dir/CheckSymbolExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_4a6f2.dir/CheckSymbolExists.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: error: ‘issetugid’ undeclared (first use in this function); did you mean ‘setegid’?
+   45 |   return ((int*)(&issetugid))[argc];
+      |                   ^~~~~~~~~
+      |                   setegid
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:45:19: note: each undeclared identifier is reported only once for each function it appears in
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:14: warning: parameter ‘argc’ set but not used [-Wunused-but-set-parameter]
+   41 | int main(int argc, char** argv)
+      |          ~~~~^~~~
+make[1]: *** [CMakeFiles/cmTC_4a6f2.dir/build.make:66: CMakeFiles/cmTC_4a6f2.dir/CheckSymbolExists.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4a6f2/fast] Error 2
+
+
+File /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <fcntl.h>
+#include <inttypes.h>
+#include <memory.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <errno.h>
+#include <unistd.h>
+#include <time.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/param.h>
+#include <netdb.h>
+#include <dlfcn.h>
+#include <arpa/inet.h>
+#include <poll.h>
+#include <sys/socket.h>
+#include <sys/random.h>
+#include <sys/un.h>
+#include <sys/epoll.h>
+#include <sys/eventfd.h>
+#include <sys/ioctl.h>
+#include <sys/mman.h>
+#include <sys/queue.h>
+#include <sys/select.h>
+#include <sys/sendfile.h>
+#include <sys/uio.h>
+#include <sys/wait.h>
+#include <sys/resource.h>
+#include <sys/timerfd.h>
+#include <netinet/in.h>
+#include <netinet/tcp.h>
+#include <ifaddrs.h>
+#include <stdio.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef issetugid
+  return ((int*)(&issetugid))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the prototype gethostbyname_r exists for EVENT__HAVE_GETHOSTBYNAME_R_3_ARG failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f5e33/fast && /usr/bin/make -f CMakeFiles/cmTC_f5e33.dir/build.make CMakeFiles/cmTC_f5e33.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f5e33.dir/CheckPrototypeDefinition.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_f5e33.dir/CheckPrototypeDefinition.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:66: warning: ‘struct hostent_data’ declared inside parameter list will not be visible outside of this definition or declaration
+   14 | int gethostbyname_r(const char *name, struct hostent *hp, struct hostent_data *hdata) {
+      |                                                                  ^~~~~~~~~~~~
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:5: error: conflicting types for ‘gethostbyname_r’
+   14 | int gethostbyname_r(const char *name, struct hostent *hp, struct hostent_data *hdata) {
+      |     ^~~~~~~~~~~~~~~
+In file included from /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:
+/usr/include/netdb.h:177:12: note: previous declaration of ‘gethostbyname_r’ was here
+  177 | extern int gethostbyname_r (const char *__restrict __name,
+      |            ^~~~~~~~~~~~~~~
+make[1]: *** [CMakeFiles/cmTC_f5e33.dir/build.make:66: CMakeFiles/cmTC_f5e33.dir/CheckPrototypeDefinition.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f5e33/fast] Error 2
+
+
+
+#include <netdb.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef gethostbyname_r
+  cmakeRequireSymbol(0, &gethostbyname_r);
+#endif
+}
+
+int gethostbyname_r(const char *name, struct hostent *hp, struct hostent_data *hdata) {
+  return 0;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Determining if the prototype gethostbyname_r exists for EVENT__HAVE_GETHOSTBYNAME_R_5_ARG failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e9f30/fast && /usr/bin/make -f CMakeFiles/cmTC_e9f30.dir/build.make CMakeFiles/cmTC_e9f30.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e9f30.dir/CheckPrototypeDefinition.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_e9f30.dir/CheckPrototypeDefinition.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:14:17: error: conflicting types for ‘gethostbyname_r’
+   14 | struct hostent *gethostbyname_r(const char *name, struct hostent *hp, char *buf, size_t buflen, int *herr) {
+      |                 ^~~~~~~~~~~~~~~
+In file included from /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:1:
+/usr/include/netdb.h:177:12: note: previous declaration of ‘gethostbyname_r’ was here
+  177 | extern int gethostbyname_r (const char *__restrict __name,
+      |            ^~~~~~~~~~~~~~~
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c: In function ‘gethostbyname_r’:
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:15:10: error: ‘NULL’ undeclared (first use in this function)
+   15 |   return NULL;
+      |          ^~~~
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:2:1: note: ‘NULL’ is defined in header ‘<stddef.h>’; did you forget to ‘#include <stddef.h>’?
+    1 | #include <netdb.h>
+  +++ |+#include <stddef.h>
+    2 | 
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:15:10: note: each undeclared identifier is reported only once for each function it appears in
+   15 |   return NULL;
+      |          ^~~~
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/CheckPrototypeDefinition.c:16:1: warning: control reaches end of non-void function [-Wreturn-type]
+   16 | }
+      | ^
+make[1]: *** [CMakeFiles/cmTC_e9f30.dir/build.make:66: CMakeFiles/cmTC_e9f30.dir/CheckPrototypeDefinition.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_e9f30/fast] Error 2
+
+
+
+#include <netdb.h>
+
+
+static void cmakeRequireSymbol(int dummy, ...) {
+  (void) dummy;
+}
+
+static void checkSymbol(void) {
+#ifndef gethostbyname_r
+  cmakeRequireSymbol(0, &gethostbyname_r);
+#endif
+}
+
+struct hostent *gethostbyname_r(const char *name, struct hostent *hp, char *buf, size_t buflen, int *herr) {
+  return NULL;
+}
+
+#ifdef __CLASSIC_C__
+int main() {
+  int ac;
+  char*av[];
+#else
+int main(int ac, char *av[]) {
+#endif
+  checkSymbol();
+  if (ac > 1000) {
+    return *av[0];
+  }
+  return 0;
+}
+
+
+Performing C SOURCE FILE Test EVENT__HAVE_DECL_KERN_ARND failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_82c94/fast && /usr/bin/make -f CMakeFiles/cmTC_82c94.dir/build.make CMakeFiles/cmTC_82c94.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_82c94.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DEVENT__HAVE_DECL_KERN_ARND   -o CMakeFiles/cmTC_82c94.dir/src.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+In file included from /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:2:
+/usr/include/x86_64-linux-gnu/sys/sysctl.h:21:2: warning: #warning "The <sys/sysctl.h> header is deprecated and will be removed." [-Wcpp]
+   21 | #warning "The <sys/sysctl.h> header is deprecated and will be removed."
+      |  ^~~~~~~
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:3:13: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+    3 |         int main() { (void)KERN_ARND; return 0; }
+      |             ^~~~
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:3:28: error: ‘KERN_ARND’ undeclared (first use in this function); did you mean ‘KERN_RANDOM’?
+    3 |         int main() { (void)KERN_ARND; return 0; }
+      |                            ^~~~~~~~~
+      |                            KERN_RANDOM
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:3:28: note: each undeclared identifier is reported only once for each function it appears in
+make[1]: *** [CMakeFiles/cmTC_82c94.dir/build.make:66: CMakeFiles/cmTC_82c94.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_82c94/fast] Error 2
+
+
+Source file was:
+
+          #include <sys/sysctl.h>
+        int main() { (void)KERN_ARND; return 0; }
+Determining size of SSIZE_T failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_994d2/fast && /usr/bin/make -f CMakeFiles/cmTC_994d2.dir/build.make CMakeFiles/cmTC_994d2.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_994d2.dir/EVENT__SIZEOF_SSIZE_T_UPPER.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings    -o CMakeFiles/cmTC_994d2.dir/EVENT__SIZEOF_SSIZE_T_UPPER.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SSIZE_T_UPPER.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SSIZE_T_UPPER.c:61:22: error: ‘SSIZE_T’ undeclared here (not in a function); did you mean ‘SSIZE_MAX’?
+   61 | #define SIZE (sizeof(SSIZE_T))
+      |                      ^~~~~~~
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SSIZE_T_UPPER.c:63:12: note: in expansion of macro ‘SIZE’
+   63 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+make[1]: *** [CMakeFiles/cmTC_994d2.dir/build.make:66: CMakeFiles/cmTC_994d2.dir/EVENT__SIZEOF_SSIZE_T_UPPER.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_994d2/fast] Error 2
+
+
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CheckTypeSize/EVENT__SIZEOF_SSIZE_T_UPPER.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+#include "fcntl.h"
+#include "inttypes.h"
+#include "memory.h"
+#include "signal.h"
+#include "stdarg.h"
+#include "stddef.h"
+#include "stdint.h"
+#include "stdlib.h"
+#include "string.h"
+#include "errno.h"
+#include "unistd.h"
+#include "time.h"
+#include "sys/types.h"
+#include "sys/stat.h"
+#include "sys/time.h"
+#include "sys/param.h"
+#include "netdb.h"
+#include "dlfcn.h"
+#include "arpa/inet.h"
+#include "poll.h"
+#include "sys/socket.h"
+#include "sys/random.h"
+#include "sys/un.h"
+#include "sys/epoll.h"
+#include "sys/eventfd.h"
+#include "sys/ioctl.h"
+#include "sys/mman.h"
+#include "sys/queue.h"
+#include "sys/select.h"
+#include "sys/sendfile.h"
+#include "sys/uio.h"
+#include "sys/wait.h"
+#include "sys/resource.h"
+#include "sys/timerfd.h"
+#include "netinet/in.h"
+#include "netinet/tcp.h"
+#include "ifaddrs.h"
+#include "stdio.h"
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(SSIZE_T))
+static char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_SOCKADDR_IN6_SIN6_LEN failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_875fc/fast && /usr/bin/make -f CMakeFiles/cmTC_875fc.dir/build.make CMakeFiles/cmTC_875fc.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_875fc.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DEVENT__HAVE_STRUCT_SOCKADDR_IN6_SIN6_LEN   -o CMakeFiles/cmTC_875fc.dir/src.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:5: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+    6 | int main()
+      |     ^~~~
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:42: error: ‘struct sockaddr_in6’ has no member named ‘sin6_len’
+    8 |   (void)sizeof(((struct sockaddr_in6 *)0)->sin6_len);
+      |                                          ^~
+make[1]: *** [CMakeFiles/cmTC_875fc.dir/build.make:66: CMakeFiles/cmTC_875fc.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_875fc/fast] Error 2
+
+
+Source file was:
+
+#include <netinet/in.h>
+#include <sys/socket.h>
+#include <netdb.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr_in6 *)0)->sin6_len);
+  return 0;
+}
+
+Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_SOCKADDR_IN_SIN_LEN failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f1aab/fast && /usr/bin/make -f CMakeFiles/cmTC_f1aab.dir/build.make CMakeFiles/cmTC_f1aab.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f1aab.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DEVENT__HAVE_STRUCT_SOCKADDR_IN_SIN_LEN   -o CMakeFiles/cmTC_f1aab.dir/src.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:5: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+    6 | int main()
+      |     ^~~~
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:42: error: ‘struct sockaddr_in6’ has no member named ‘sin_len’
+    8 |   (void)sizeof(((struct sockaddr_in6 *)0)->sin_len);
+      |                                          ^~
+make[1]: *** [CMakeFiles/cmTC_f1aab.dir/build.make:66: CMakeFiles/cmTC_f1aab.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_f1aab/fast] Error 2
+
+
+Source file was:
+
+#include <netinet/in.h>
+#include <sys/socket.h>
+#include <netdb.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr_in6 *)0)->sin_len);
+  return 0;
+}
+
+Performing C SOURCE FILE Test EVENT__HAVE_STRUCT_SOCKADDR_STORAGE___SS_FAMILY failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_aebe8/fast && /usr/bin/make -f CMakeFiles/cmTC_aebe8.dir/build.make CMakeFiles/cmTC_aebe8.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_aebe8.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DEVENT__HAVE_STRUCT_SOCKADDR_STORAGE___SS_FAMILY   -o CMakeFiles/cmTC_aebe8.dir/src.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:6:5: warning: function declaration isn’t a prototype [-Wstrict-prototypes]
+    6 | int main()
+      |     ^~~~
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:8:48: error: ‘struct sockaddr_storage’ has no member named ‘__ss_family’; did you mean ‘ss_family’?
+    8 |   (void)sizeof(((struct sockaddr_storage *)0)->__ss_family);
+      |                                                ^~~~~~~~~~~
+      |                                                ss_family
+make[1]: *** [CMakeFiles/cmTC_aebe8.dir/build.make:66: CMakeFiles/cmTC_aebe8.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_aebe8/fast] Error 2
+
+
+Source file was:
+
+#include <netinet/in.h>
+#include <sys/socket.h>
+#include <netdb.h>
+
+int main()
+{
+  (void)sizeof(((struct sockaddr_storage *)0)->__ss_family);
+  return 0;
+}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c188f/fast && /usr/bin/make -f CMakeFiles/cmTC_c188f.dir/build.make CMakeFiles/cmTC_c188f.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_c188f.dir/src.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c188f.dir/src.c.o   -c /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:3:7: warning: no previous prototype for ‘test_func’ [-Wmissing-prototypes]
+    3 | void* test_func(void* data)
+      |       ^~~~~~~~~
+Linking C executable cmTC_c188f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c188f.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_c188f.dir/src.c.o  -o cmTC_c188f 
+/usr/bin/ld: CMakeFiles/cmTC_c188f.dir/src.c.o: in function `main':
+/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:11: undefined reference to `pthread_create'
+/usr/bin/ld: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:12: undefined reference to `pthread_detach'
+/usr/bin/ld: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp/src.c:13: undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_c188f.dir/build.make:87: cmTC_c188f] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_c188f/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_43174/fast && /usr/bin/make -f CMakeFiles/cmTC_43174.dir/build.make CMakeFiles/cmTC_43174.dir/build
+make[1]: Entering directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43174.dir/CheckFunctionExists.c.o
+/usr/bin/cc -D_GNU_SOURCE  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_43174.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_43174
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43174.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g  -Wall -Wextra -Wno-unused-parameter -Wstrict-aliasing -Wstrict-prototypes -fno-strict-aliasing -Wmissing-prototypes -Winit-self -Wmissing-field-initializers -Wdeclaration-after-statement -Waddress -Wnormalized=id -Woverride-init -Wlogical-op -Wwrite-strings -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_43174.dir/CheckFunctionExists.c.o  -o cmTC_43174  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_43174.dir/build.make:87: cmTC_43174] Error 1
+make[1]: Leaving directory '/home/jack/miniob/cmake-build-debug/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_43174/fast] Error 2
+
+
+
