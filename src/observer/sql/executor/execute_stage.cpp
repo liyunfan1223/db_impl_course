@@ -435,6 +435,9 @@ RC ExecuteStage::do_select(const char *db, const Query *sql,
               auto rit = &tuple_sets[j];
               vec.push_back(rit->tuples().begin() + (i / rec_tot[j]) % rit->size());
           }
+          // 000 001 002 ... 010
+          // 3 * 4 * 5 = 60
+          // 11 11 % 5 = 1  (11 / 5 % 4)
           Tuple merge_res = merge_tuples(vec, orders);
           bool c = match_join_condition(&merge_res, condition_idxs);
           if (c)

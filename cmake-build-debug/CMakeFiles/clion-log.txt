@@ -110,11 +110,11 @@ Begin to build miniob
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src
 Begin to build obclient
--- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src/obclient
--- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src/obclient
 Use /home/jack/miniob/src/obclient/client.cpp
 Binary directory:/home/jack/miniob/cmake-build-debug/src/obclient/../../bin
 Begin to build observer
+-- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src/obclient
+-- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src/obclient
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src/observer
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src/observer
 MAIN SRC: /home/jack/miniob/src/observer/main.cpp
@@ -186,9 +186,9 @@ Use /home/jack/miniob/src/observer/storage/trx/trx.cpp
 Binary directory:/home/jack/miniob/cmake-build-debug/src/observer/../../bin
 Archive directory:/home/jack/miniob/cmake-build-debug/src/observer/../../lib
 Begin to build unitest
+ -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g 
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/unitest
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/unitest
- -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g 
 Build bitmap_test according to /home/jack/miniob/unitest/bitmap_test.cpp
 Build bp_manager_test according to /home/jack/miniob/unitest/bp_manager_test.cpp
 Build bplus_tree_test according to /home/jack/miniob/unitest/bplus_tree_test.cpp
@@ -200,9 +200,9 @@ Build pidfile_test according to /home/jack/miniob/unitest/pidfile_test.cpp
 Build rc_test according to /home/jack/miniob/unitest/rc_test.cpp
 Begin to build test
  -Wall -DCMAKE_EXPORT_COMPILE_COMMANDS=1  -O2 -g 
-Build client_performance_test according to /home/jack/miniob/test/client_performance_test.cpp
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/test
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/test
+Build client_performance_test according to /home/jack/miniob/test/client_performance_test.cpp
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/jack/miniob/cmake-build-debug
