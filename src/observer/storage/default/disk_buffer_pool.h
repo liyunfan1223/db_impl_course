@@ -74,11 +74,15 @@ class BPFileHandle {
 
 class BPManager {
  public:
-  BPManager(int size = BP_BUFFER_SIZE) {
+  BPManager(int sz = BP_BUFFER_SIZE) {
     //TODO for test
-    frame = new Frame[size];
-    allocated = new bool[size];
-    _cache = new cache::lru_cache<std::pair<int, PageNum>, Frame*>(size);
+    size = sz;
+    frame = new Frame[sz];
+    allocated = new bool[sz];
+    allocated_list = new std::list<int>;
+    free_list = new std::list<int>;
+    hash_table = new std::unordered_map<int, int>;
+    for (int i = 0; i < sz; i++) free_list->push_back(i);
   }
 
   ~BPManager() {
@@ -89,14 +93,64 @@ class BPManager {
 
   Frame *alloc() {
     // TODO for test
-
+//    if (number_allocated != size) {
+//        for (int i = 0; i < size; i++) {
+//            if (allocated[i] == 0) {
+//                allocated[i] = 1;
+//                allocated_list->push_back(i);
+//                number_allocated++;
+//                return frame + i;
+//            }
+//        }
+//    }
+//    int idx = allocated_list->back();
+//    allocated_list->pop_back();
+//    return frame + idx;
   }
 
   Frame *get(int file_desc, PageNum page_num) {
+      printf("访问页号:%d\t", page_num);
     // TODO for test
-      return _cache->get(std::make_pair(file_desc, page_num));
+      int idx;
+      if (hash_table->find(page_num) == hash_table->end()) {
+          printf("未命中\t");
+          // 是否有空余位置
+          if (allocated_list->size() == size) {
+              // 淘汰
+              idx = allocated_list->front();
+              printf("踢出%d\t", (frame + idx)->page.page_num);
+              allocated_list->pop_front();
+              hash_table->erase(idx);
+              hash_table->insert(std::make_pair(page_num,  idx));
+              allocated_list->push_back(idx);
+          } else {
+              // 直接加入
+              printf("\t\t");
+              idx = free_list->front();
+              free_list->pop_front();
+              allocated[idx] = 1;
+              allocated_list->push_back(idx);
+              hash_table->insert(std::make_pair(page_num, idx));
+          }
+      } else {
+          printf("命中 \t");
+          printf("\t\t");
+          // 调整list
+          idx = (*hash_table)[page_num];
+          allocated_list->remove(idx);
+          allocated_list->push_back(idx);
+      }
+      (frame + idx)->page.page_num = page_num;
+      return frame + idx;
   }
 
+  void print_debug() {
+      printf("当前缓冲区状态:", allocated_list->size());
+      for (auto it = allocated_list->begin(); it != allocated_list->end(); it++) {
+          printf("%d ", frame[*it].page.page_num);
+      }
+      printf("\n");
+  }
   Frame *getFrame() {
     // TODO for test
   }
@@ -110,7 +164,9 @@ class BPManager {
   Frame *frame = nullptr;
   bool *allocated = nullptr;
 private:
-    cache::lru_cache<std::pair<int, PageNum>, Frame*> *_cache;
+    std::list<int> *allocated_list;
+    std::list<int> *free_list;
+    std::unordered_map<int, int> *hash_table;
 };
 
 class DiskBufferPool {
