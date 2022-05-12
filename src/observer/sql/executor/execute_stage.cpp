@@ -591,7 +591,7 @@ RC ExecuteStage::do_select(const char *db, const Query *sql,
         if (c)
             print_tuples.add(std::move(merge_res));
     //TODO 添加聚合算子
-        aggregation_exec(selects, &print_tuples);
+      aggregation_exec(selects, &print_tuples);
       print_tuples.print(ss);
     }
   } else {
