@@ -86,6 +86,8 @@ Install os/os.h to /usr/local/common/include/os
 Install os/path.h to /usr/local/common/include/os
 Install os/pidfile.h to /usr/local/common/include/os
 Install os/process.h to /usr/local/common/include/os
+-- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src
+-- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src
 Install os/process_param.h to /usr/local/common/include/os
 Install os/signal.h to /usr/local/common/include/os
 Install seda/callback.h to /usr/local/common/include/seda
@@ -107,16 +109,14 @@ Install time/datetime.h to /usr/local/common/include/time
 Install time/timeout_info.h to /usr/local/common/include/time
 Install version.h to /usr/local/common/include/
 Begin to build miniob
--- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src
--- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src
 Begin to build obclient
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src/obclient
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src/obclient
 Use /home/jack/miniob/src/obclient/client.cpp
 Binary directory:/home/jack/miniob/cmake-build-debug/src/obclient/../../bin
-Begin to build observer
 -- This is PROJECT_BINARY_DIR dir /home/jack/miniob/cmake-build-debug/src/observer
 -- This is PROJECT_SOURCE_DIR dir /home/jack/miniob/src/observer
+Begin to build observer
 MAIN SRC: /home/jack/miniob/src/observer/main.cpp
 Use /home/jack/miniob/src/observer/event/execution_plan_event.cpp
 Use /home/jack/miniob/src/observer/event/session_event.cpp
