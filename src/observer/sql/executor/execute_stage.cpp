@@ -14,6 +14,7 @@ See the Mulan PSL v2 for more details. */
 
 #include <string>
 #include <sstream>
+#include <algorithm>
 
 #include "execute_stage.h"
 
@@ -216,6 +217,43 @@ void end_trx_if_need(Session *session, Trx *trx, bool all_right)
   }
 }
 
+// 需要满足多表联查条件
+bool match_join_condition(const Tuple *res_tuple,
+                          const std::vector<std::vector<int>> condition_idxs) {
+    // res_tuple 是 需要进行筛选的某一行
+    // condition_idxs 是 C x 3 数组
+    // 每一条的3个元素代表（左值的属性在新schema的下标，CompOp运算符，右值的属性在新schema的下标）
+    //TODO 判断表中某一行 res_tuple 是否满足多表联查条件即：左值=右值
+    for (int i = 0; i < condition_idxs.size(); i++) {
+        CompOp comp = CompOp(condition_idxs[i][1]);
+        const TupleValue &left_value = res_tuple->get(condition_idxs[i][0]);
+        const TupleValue &right_value = res_tuple->get(condition_idxs[i][2]);
+        if (comp == EQUAL_TO && left_value.compare(right_value)) {
+            return false;
+        }
+    }
+    return true;
+}
+
+// 将多段小元组合成一个大元组
+Tuple merge_tuples(
+        const std::vector<std::vector<Tuple>::const_iterator> temp_tuples,
+        std::vector<int> orders) {
+    std::vector<std::shared_ptr<TupleValue>> temp_res;
+    Tuple res_tuple;
+    //TODO 先把每个字段都放到对应的位置上(temp_res)
+    //TODO 再依次(orders)添加到大元组(res_tuple)里即可
+    for (auto iter: temp_tuples) {
+        for (auto value: iter->values()) {
+            temp_res.push_back(value);
+        }
+    }
+    for (int order: orders) {
+        res_tuple.add(temp_res[order]);
+    }
+    return res_tuple;
+}
+
 // 这里没有对输入的某些信息做合法性校验，比如查询的列名、where条件中的列名等，没有做必要的合法性校验
 // 需要补充上这一部分. 校验部分也可以放在resolve，不过跟execution放一起也没有关系
 RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_event)
@@ -264,13 +302,124 @@ RC ExecuteStage::do_select(const char *db, Query *sql, SessionEvent *session_eve
   }
 
   std::stringstream ss;
+  TupleSet print_tuples;
+  std::vector<Tuple> temp_tuples;
   if (tuple_sets.size() > 1) {
     // 本次查询了多张表，需要做join操作
+      // 本次查询了多张表，需要做join操作
+      TupleSchema join_schema;
+      TupleSchema old_schema;
+      for (std::vector<TupleSet>::const_reverse_iterator
+                   rit = tuple_sets.rbegin(),
+                   rend = tuple_sets.rend();
+           rit != rend; ++rit) {
+          // 这里是某张表投影完的所有字段，如果是select * from t1,t2;
+          // old_schema=[t1.a, t1.b, t2.a, t2.b]
+          old_schema.append(rit->get_schema());
+      }
+
+      std::vector<int> select_order;
+      //TODO 根据列名输出顺序，添加 old_schema 对应字段到 join_schema 中，并构建select_order数组
+      // 如果是select * ，添加所有字段
+      // 如果是select t1.*，表名匹配的加入字段
+      // 如果是select t1.age，表名+字段名匹配的加入字段
+
+      std::vector<int> orders;
+      for (int i = selects.attr_num - 1; i >= 0; i--) {
+          for (int j = 0; j < (int)old_schema.fields().size(); j++) {
+              if (selects.attributes[i].relation_name == NULL
+                  || (strcmp(selects.attributes[i].relation_name, old_schema.field(j).table_name()) == 0
+                      && (strcmp(selects.attributes[i].attribute_name, old_schema.field(j).field_name()) == 0
+                          || strcmp(selects.attributes[i].attribute_name, "*") == 0))) {
+                  TupleField field_now = old_schema.field(j);
+                  join_schema.add(field_now.type(), field_now.table_name(), field_now.field_name());
+                  orders.push_back(j);
+              }
+          }
+      }
+
+      print_tuples.set_schema(join_schema);
+
+      // 构建联查的conditions需要找到对应的表
+      // C x 3 数组
+      // 每一条的3个元素代表（左值的属性在新schema的下标，CompOp运算符，右值的属性在新schema的下标）
+      std::vector<std::vector<int>> condition_idxs;
+      for (size_t i = 0; i < selects.condition_num; i++) {
+          const Condition &condition = selects.conditions[i];
+          if (condition.left_is_attr == 1 &&
+              condition.right_is_attr == 1) {
+              std::vector<int> temp_con;
+              const char *l_table_name = condition.left_attr.relation_name;
+              const char *l_field_name = condition.left_attr.attribute_name;
+              const CompOp comp = condition.comp;
+              const char *r_table_name = condition.right_attr.relation_name;
+              const char *r_field_name = condition.right_attr.attribute_name;
+              temp_con.push_back(print_tuples.get_schema().index_of_field(
+                      l_table_name, l_field_name));
+              temp_con.push_back(comp);
+              temp_con.push_back(print_tuples.get_schema().index_of_field(
+                      r_table_name, r_field_name));
+              condition_idxs.push_back(temp_con);
+          }
+      }
+      //TODO 元组的拼接需要实现笛卡尔积
+      //TODO 将符合连接条件的元组添加到print_tables中
+      int tuple_number = 1;
+      std::vector<int> rec_tot(tuple_sets.size());
+      for (int i = (int)tuple_sets.size() - 1; i >= 0; i--) {
+          auto rit = &tuple_sets[i];
+          rec_tot[i] = tuple_number;
+          tuple_number *= rit->size();
+      }
+
+      for (int i = 0; i < tuple_number; i++) {
+          std::vector<std::vector<Tuple>::const_iterator> vec;
+          for (int j = tuple_sets.size() - 1; j >= 0; j--) {
+              auto rit = &tuple_sets[j];
+              vec.push_back(rit->tuples().begin() + (i / rec_tot[j]) % rit->size());
+          }
+          Tuple merge_res = merge_tuples(vec, orders);
+          bool c = match_join_condition(&merge_res, condition_idxs);
+          if (c) {
+              temp_tuples.emplace_back(std::move(merge_res));
+          }
+      }
+
   } else {
     // 当前只查询一张表，直接返回结果即可
-    tuple_sets.front().print(ss);
+//      tuple_sets.front().print(ss);
+      print_tuples.set_schema(tuple_sets.front().get_schema());
+      for (auto &x : tuple_sets.front().tuples_) {
+          temp_tuples.emplace_back(std::move(x));
+      }
   }
-
+  // TODO order by算子实现
+  if (selects.order_num != 0) {
+      std::sort(temp_tuples.begin(), temp_tuples.end(), [&](Tuple &t1, Tuple &t2) {
+          for (int i = 0; i < selects.order_num; i++) {
+              OrderDescription orderDescription = selects.order_des[i];
+              int order_schema_idx = -1;
+              for (int j = 0; j < (int)print_tuples.get_schema().fields().size(); j++) {
+                  if (( orderDescription.relation_name == NULL || (strcmp(orderDescription.relation_name, print_tuples.get_schema().field(j).table_name()) == 0) )
+                          && (strcmp(orderDescription.attribute_name, print_tuples.get_schema().field(j).field_name()) == 0
+                              || strcmp(orderDescription.attribute_name, "*") == 0) ) {
+                      order_schema_idx = j;
+                      break;
+                  }
+              }
+              int comp = t1.get(order_schema_idx).compare((t2.get(order_schema_idx)));
+              if (comp != 0) {
+                  // 正序 or 倒序
+                  return orderDescription.type == kOrderAsc ? (int)(comp < 0) : (int)(comp >= 0);
+              }
+          }
+          return 0;
+      });
+  }
+  for (auto &x : temp_tuples) {
+      print_tuples.add(std::move(x));
+  }
+  print_tuples.print(ss);
   for (SelectExeNode *&tmp_node : select_nodes) {
     delete tmp_node;
   }

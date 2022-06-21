@@ -158,7 +158,7 @@ public:
     return schema_;
   }
 
-private:
+public:
   std::vector<Tuple> tuples_;
   TupleSchema schema_;
 };
